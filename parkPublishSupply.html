@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>园区-发布-发布信息</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+    <header class="wh-cm-hd wh-cm-hd2">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    供应信息发布
+</header>
+
+<div class="park-publish-news-layout bg-white">
+
+    <hr class="wh-hd-line">
+
+    <div class="news-edit-box">
+        <input class="build-title" type="text" placeholder="请输入标题">
+        <textarea class="build-textarea" placeholder="请输入编辑内容 "></textarea>
+        <div class="add-file-box clearfix">
+            <div class="pic-list">
+                <div class="pic-li">
+                    <img src="./images/pj.jpg" alt="">
+                </div>
+                <div class="add-file">
+                    <input type="file" class="file-ipt">
+                    <span class="file-box">+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="park-build-btn">发布</button>
+
+</div>
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+
+</body>
+</html>
+

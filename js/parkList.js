@@ -1,0 +1,1 @@
+var sortArr=["推荐","附近","已加入","已建立"],mobileSelect1=new MobileSelect({trigger:"#triggerAll",title:"物流园区",wheels:[{data:sortArr}],position:[1],titleColor:"#333",textColor:"#666",transitionEnd:function(o,t){console.log(t)},callback:function(o,t){console.log(t)}});

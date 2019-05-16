@@ -1,0 +1,1 @@
+$(function(){$("#key-text-btn").click(function(){$(".wh-opa,.wh-pop").show()}),$("#pop-close").click(function(){$(".wh-opa,.wh-pop").hide()})});

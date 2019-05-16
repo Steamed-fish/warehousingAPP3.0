@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/lib/swiper/swiper.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>首页</title>
+    <script src="./js/responsive.js"></script>
+    <script>
+        if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+            document.documentElement.className = 'pcMode'
+            document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+    <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/thirdVersionMain.css">
+
+
+</head>
+<body>
+<div class="home-warp">
+
+
+    <div class="hm-search-all">
+
+        <div class="hm-search-close">
+            <i class="iconfont icon-close">&#xe80c;</i>
+        </div>
+
+        <div class="hm-search-form clearfix">
+            <div class="hm-search-type">
+                <select data-am-selected>
+                    <option value="a" selected>仓库</option>
+                    <option value="b">服务商</option>
+                    <option value="o">货源</option>
+                    <option value="m">园区</option>
+                </select>
+            </div>
+            <div class="hm-search-box">
+                <input type="text" class="hm-search-input" placeholder="请输入关键字">
+                <span class="iconfont icon-search">&#xe6c3;</span>
+            </div>
+        </div>
+
+
+        <div class="hm-search-history">
+            <div class="hm-history-head">
+                历史搜索
+                <span class="hm-history-clear">清空</span>
+            </div>
+
+            <div class="hm-history-list">
+                <div class="hm-history-item clearfix">
+                    <div class="hm-history-name">保税仓</div>
+                    <span class="iconfont icon-close">&#xe80c;</span>
+                </div>
+                <div class="hm-history-item clearfix">
+                    <div class="hm-history-name">四川省绵阳市游仙区安国</div>
+                    <span class="iconfont icon-close">&#xe80c;</span>
+                </div>
+                <div class="hm-history-item clearfix">
+                    <div class="hm-history-name">普洛斯上海浦东机场仓库</div>
+                    <span class="iconfont icon-close">&#xe80c;</span>
+                </div>
+                <div class="hm-history-item clearfix">
+                    <div class="hm-history-name">保税仓</div>
+                    <span class="iconfont icon-close">&#xe80c;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 置顶按钮 -->
+    <span class="iconfont icon-totop">&#xe695;</span>
+
+
+
+    <!-- JS -->
+    <script src="./assets/lib/fonts/iconfont.js"></script>
+    <script src="./assets/lib/jquery/jquery.min.js"></script>
+    <script src="./assets/lib/fastclick/fastclick.js"></script>
+    <script src="./assets/lib/amazeui/amazeui.min.js"></script>
+    <script src="./js/common.js"></script>
+
+
+    <script src="./assets/lib/swiper/swiper.min.js"></script>
+    <script src="./js/index.js"></script>
+
+    <script>
+        $(function () {
+            $('.hm-history-clear').click(function () {
+                $('.hm-history-list .hm-history-item').remove();
+            })
+            $('.hm-history-item .icon-close').click(function () {
+                $(this).parents('.hm-history-item').remove();
+            })
+        })
+
+
+    </script>
+
+</div>
+</body>
+</html>

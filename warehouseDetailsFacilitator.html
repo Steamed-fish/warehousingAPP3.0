@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>仓库详情-合作服务商</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+<div class="wh-details-fac-layout">
+    <header class="wh-cm-hd wh-cm-hd2">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    合作服务商
+    <a href="javascript:;" class="iconfont icon-search">&#xe6c3;</a>
+</header>
+
+
+    <!-- 列表 -->
+    <div class="wh-details-fac-list-wrap">
+        <ul class="wh-details-fac-list">
+            <li class="wh-details-fac-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">深圳市佳捷现代物流有限公司</h6>
+                    <p class="list-address">
+                        广东省/深圳市/龙岗区
+                    </p>
+                    <p class="business-type">主营业务：<span class="sp">关务</span></p>
+                </div>
+                <a href="javascript:;" class="coper-btn">申请合作</a>
+            </li>
+            <li class="wh-details-fac-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">深圳市佳捷现代物流有限公司</h6>
+                    <p class="list-address">
+                        广东省/深圳市/龙岗区
+                    </p>
+                    <p class="business-type">主营业务：<span class="sp">关务</span></p>
+                </div>
+                <a href="javascript:;" class="coper-btn">申请合作</a>
+            </li>
+            <li class="wh-details-fac-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">深圳市佳捷现代物流有限公司</h6>
+                    <p class="list-address">
+                        广东省/深圳市/龙岗区
+                    </p>
+                    <p class="business-type">主营业务：<span class="sp">关务</span></p>
+                </div>
+                <a href="javascript:;" class="coper-btn">申请合作</a>
+            </li>
+            <li class="wh-details-fac-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">深圳市佳捷现代物流有限公司</h6>
+                    <p class="list-address">
+                        广东省/深圳市/龙岗区
+                    </p>
+                    <p class="business-type">主营业务：<span class="sp">关务</span></p>
+                </div>
+                <a href="javascript:;" class="coper-btn">申请合作</a>
+            </li>
+            <li class="wh-details-fac-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">深圳市佳捷现代物流有限公司</h6>
+                    <p class="list-address">
+                        广东省/深圳市/龙岗区
+                    </p>
+                    <p class="business-type">主营业务：<span class="sp">关务</span></p>
+                </div>
+                <a href="javascript:;" class="coper-btn">申请合作</a>
+            </li>
+            <li class="wh-details-fac-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">深圳市佳捷现代物流有限公司</h6>
+                    <p class="list-address">
+                        广东省/深圳市/龙岗区
+                    </p>
+                    <p class="business-type">主营业务：<span class="sp">关务</span></p>
+                </div>
+                <a href="javascript:;" class="coper-btn">申请合作</a>
+            </li>
+        </ul>
+    </div>
+   
+    <div class="am-modal" tabindex="-1" id="coperModal">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">
+                <a href="javascript: void(0)" class="am-close" data-am-modal-close>&times;</a>
+            </div>
+            <div class="am-modal-bd">是否确定发起合作申请？</div>
+            <div class="am-modal-footer">
+                <span class="am-modal-btn">确定</span>
+            </div>
+        </div>
+    </div>    
+
+</div>
+
+    <!-- JS -->
+    <script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+
+    <script>
+        $(function() {
+            var $modal = $('#coperModal');
+        
+            $('.coper-btn').on('click', function(e) {
+                var $target = $(e.target);
+                $modal.modal();
+            });
+        });
+    </script>
+        
+</body>
+</html>

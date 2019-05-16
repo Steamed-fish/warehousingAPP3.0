@@ -1,0 +1,1 @@
+$(function(){$(".icon-share").unbind("click").click(function(){$(".wh-owner-details-mask-black").show(),$(".wh-owner-details-share-box").animate({bottom:"0"})}),$(".wh-owner-details-mask-black").unbind("click").click(function(){var i=$(document).height();$(this).hide(),$(".wh-owner-details-share-box").animate({bottom:-i})})});

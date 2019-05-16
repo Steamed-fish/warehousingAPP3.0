@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/lib/nouislider/nouislider.min.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>货源列表</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+<div class="faclist-wrap source-list-layout">
+
+    <div class="wh-lbs-hd">
+        <div class="wh-sub-search clearfix">
+            <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+            <div class="search-box">
+                <input type="text" class="bdr-text-ipt search-ipt" placeholder="请输入关键字">
+                <span class="iconfont icon-search">&#xe6c3;</span>
+            </div>
+            <a class="filter" href="javascript:;">类目<i class="iconfont icon-filter">&#xe672;</i></a>
+        </div>
+        <p class="wh-lbs-range">距离 (英里)</p>
+        <div class="range-lbs-area">
+            <div class="noUiSlider"></div>
+            <span class="noLimit">不限</span>
+        </div>
+    </div>
+    <hr class="line">
+
+    <!-- 列表 -->
+    <div class="facList-wrap">
+        <ul class="wh-warehouse-list">
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">华为 HUAWEI P20 AI智慧全面屏</h6>
+                    <p class="list-company">广州柏汇鸿物流有限公司</p>
+                    <p class="list-address">安徽省/合肥市/瑶海区</p>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">华为 HUAWEI P20 AI智慧全面屏</h6>
+                    <p class="list-company">广州柏汇鸿物流有限公司</p>
+                    <p class="list-address">安徽省/合肥市/瑶海区</p>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">华为 HUAWEI P20 AI智慧全面屏</h6>
+                    <p class="list-company">广州柏汇鸿物流有限公司</p>
+                    <p class="list-address">安徽省/合肥市/瑶海区</p>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">华为 HUAWEI P20 AI智慧全面屏</h6>
+                    <p class="list-company">广州柏汇鸿物流有限公司</p>
+                    <p class="list-address">安徽省/合肥市/瑶海区</p>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">华为 HUAWEI P20 AI智慧全面屏</h6>
+                    <p class="list-company">广州柏汇鸿物流有限公司</p>
+                    <p class="list-address">安徽省/合肥市/瑶海区</p>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">华为 HUAWEI P20 AI智慧全面屏</h6>
+                    <p class="list-company">广州柏汇鸿物流有限公司</p>
+                    <p class="list-address">安徽省/合肥市/瑶海区</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="wh-next-page mb10">
+        <p class="msg-up">
+            <i class="iconfont icon-up-arrow">&#xe605;</i>上拉查看下一页
+        </p>
+        <p class="mes-load" style="display:none;">
+            <i class="iconfont icon-up-load">&#xe62d;</i>正在加载数据
+        </p>
+        <p class="page-bt">查看第<span class="num">2</span>页（共<span class="num2">10</span>页）</p>
+    </div>	
+    
+    <!-- 侧边栏内容 -->
+    <div class="pop-lay">
+
+        <p class="pop-title">请选择类目</p>
+        <div class="pop-main clearfix">
+            <ul class="pop-nav">
+                <li class="pop-nav-item active">
+                    <a href="javascript:;">文体用品</a>
+                </li>
+                <li class="pop-nav-item">
+                    <a href="javascript:;">酒店餐饮</a>
+                </li>
+            </ul>
+            <div class="pop-con">
+                <div class="pop-con-item">
+                    <dl class="pop-list">
+                        <dt class="pop-list-hd">办公用品1</dt>
+                        <dd class="pop-list-bd clearfix">
+                            <a href="javascript:;" class="pop-item">计算器</a>
+                            <a href="javascript:;" class="pop-item">财务用品</a>
+                            <a href="javascript:;" class="pop-item">计算器</a>
+                            <a href="javascript:;" class="pop-item">财务用品</a>
+                            <a href="javascript:;" class="pop-item">计算器</a>
+                            <a href="javascript:;" class="pop-item">财务用品</a>
+                            <a href="javascript:;" class="pop-item">计算器</a>
+                            <a href="javascript:;" class="pop-item">财务用品</a>
+                        </dd>
+                    </dl>
+                    <dl class="pop-list">
+                        <dt class="pop-list-hd">学生文具</dt>
+                        <dd class="pop-list-bd clearfix">
+                            <a href="javascript:;" class="pop-item">本册</a>
+                            <a href="javascript:;" class="pop-item">书写笔</a>
+                            <a href="javascript:;" class="pop-item">本册</a>
+                            <a href="javascript:;" class="pop-item">书写笔</a>
+                        </dd>
+                    </dl>
+                    <dl class="pop-list">
+                        <dt class="pop-list-hd">学生文具</dt>
+                        <dd class="pop-list-bd clearfix">
+                            <a href="javascript:;" class="pop-item">本册</a>
+                            <a href="javascript:;" class="pop-item">书写笔</a>
+                            <a href="javascript:;" class="pop-item">本册</a>
+                            <a href="javascript:;" class="pop-item">书写笔</a>
+                        </dd>
+                    </dl>
+                    <dl class="pop-list">
+                        <dt class="pop-list-hd">学生文具</dt>
+                        <dd class="pop-list-bd clearfix">
+                            <a href="javascript:;" class="pop-item">本册</a>
+                            <a href="javascript:;" class="pop-item">书写笔</a>
+                            <a href="javascript:;" class="pop-item">本册</a>
+                            <a href="javascript:;" class="pop-item">书写笔</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="pop-con-item">
+                    <dl class="pop-list">
+                        <dt class="pop-list-hd">办公用品2</dt>
+                        <dd class="pop-list-bd clearfix">
+                            <a href="javascript:;" class="pop-item">计算器</a>
+                            <a href="javascript:;" class="pop-item">财务用品</a>
+                            <a href="javascript:;" class="pop-item">计算器</a>
+                            <a href="javascript:;" class="pop-item">财务用品</a>
+                            <a href="javascript:;" class="pop-item">计算器</a>
+                            <a href="javascript:;" class="pop-item">财务用品</a>
+                            <a href="javascript:;" class="pop-item">计算器</a>
+                            <a href="javascript:;" class="pop-item">财务用品</a>
+                        </dd>
+                    </dl>
+                    <dl class="pop-list">
+                        <dt class="pop-list-hd">学生文具</dt>
+                        <dd class="pop-list-bd clearfix">
+                            <a href="javascript:;" class="pop-item">本册</a>
+                            <a href="javascript:;" class="pop-item">书写笔</a>
+                            <a href="javascript:;" class="pop-item">本册</a>
+                            <a href="javascript:;" class="pop-item">书写笔</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+</div>
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+<script src="./assets/lib/nouislider/nouislider.min.js"></script>
+<script src="./js/sourceList.js"></script>
+        
+</body>
+</html>

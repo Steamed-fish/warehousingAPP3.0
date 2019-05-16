@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>仓主中心-合作伙伴-添加合作</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+
+	<header class="wh-cm-hd wh-cm-hd2">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    合作伙伴
+</header>
+
+    <div class="wh-partner-add">
+        <form action="">
+			<div class="wh-add-group clearfix">
+                <label for="" class="label">平台服务商</label>
+                <div class="label-text-box">
+                    <label class="am-radio wh-cm-radio">
+                        <input type="radio" name="radio1" value="" data-am-ucheck>
+                        是
+                    </label>
+                    <label class="am-radio wh-cm-radio">
+                        <input type="radio" name="radio1" value="" data-am-ucheck>
+                        否
+                    </label>
+                </div>
+            </div>   
+
+			<div class="wh-add-group clearfix">
+                <label for="" class="label">服务商</label>
+                <div class="label-text-box">
+                    <input type="text" class="text-ipt" placeholder="输入关键字">
+                    <span class="iconfont icon-search"  data-am-modal="{target: '#my-alert-add'}">&#xe6c3;</span>
+                </div>
+            </div>   
+
+			<div class="wh-btn-group clearfix">
+                <button class="wh-sub-btn wh-sub-btn-primary">添加合作</button>
+                <button class="wh-sub-btn wh-sub-btn-default">取消</button>
+            </div>  
+                     
+        </form>
+    </div>
+
+<!-- 提交审核 弹层 -->
+    <div class="am-modal wh-modal-alert" id="my-alert-add">
+        <div class="am-modal-dialog">
+            <div class="hd">
+                <label class="all am-checkbox wh-cm-checkbox">
+                    <input class="selectAll" type="checkbox" value="" data-am-ucheck>
+                    服务商名称
+                </label> 
+            </div>
+            <div class="bd">                  
+                <label class="am-checkbox wh-cm-checkbox">
+                    <input type="checkbox" class="am-ucheck-checkbox" value="" data-am-ucheck>
+                    东莞市欢鸿进出口有限公司
+                </label>
+                <label class="am-checkbox wh-cm-checkbox">
+                    <input type="checkbox" class="am-ucheck-checkbox" value="" data-am-ucheck checked>
+                    东莞市欢鸿进出口有限公司
+                </label>
+                <label class="am-checkbox wh-cm-checkbox">
+                    <input type="checkbox" class="am-ucheck-checkbox" value="" data-am-ucheck>
+                    东莞市欢鸿进出口有限公司
+                </label>
+                <label class="am-checkbox wh-cm-checkbox">
+                    <input type="checkbox" class="am-ucheck-checkbox" value="" data-am-ucheck>
+                    东莞市欢鸿进出口有限公司
+                </label>
+            </div>
+            <div class="ft clearfix">
+                <button type="submit" class="am-modal-btn">确定</button>
+                <button type="submit" class="am-modal-btn">取消</button>
+            </div>
+        </div>
+    </div>
+
+	<!-- JS -->
+    <script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+    <script src="./js/partnerAdd.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<button type="button" class="am-btn am-btn-success" data-am-modal="{target: '#my-modal-loading'}">Modal Loading</button>
+  
+<div class="am-modal am-modal-loading am-modal-no-btn" tabindex="-1" id="my-modal-loading">
+    <div class="am-modal-dialog loading-con">
+      <div class="am-modal-bd">
+        <span class="am-icon-spinner am-icon-spin"></span>
+      </div>
+      <div class="am-modal-hd">loading...</div>
+    </div>
+</div>
+
+
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script>
+    $(function() {
+        var $modal = $('#my-modal-loading');
+
+        $modal.on('click', function(e) {
+            var $target = $(e.target);
+            if (($target).hasClass('js-modal-open')) {
+                $modal.modal();
+            } else if (($target).hasClass('js-modal-close')) {
+                $modal.modal('close');
+            } else {
+                $modal.modal('toggle');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+$(function(){$("#modalList li").click(function(){var t=$(this).text();$("#popLink .txt").text(t)})});

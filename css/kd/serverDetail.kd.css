@@ -1,0 +1,169 @@
+html{
+	background-color: #f6f6f6;
+}
+.main{
+	width:100%;
+	color:#333;
+}
+.info-title{
+	height:auto;
+	background-color: #fff;
+	width: auto;
+	overflow: hidden;
+	padding:15px;
+}
+.info-title img{
+	width:100px;
+	height:80px;
+	border:solid 1px #eee;
+	float: left;
+}
+.info-title .it-text{
+	float:left;
+	margin-left:15px;
+}
+.info-title p{
+	font-size:16px;
+}
+.info-title em{
+	color:#fff;
+	background-color: #636c8a;
+	font-size:12px;
+	border-radius: 3px;
+	padding:2px 5px;
+	margin-top:5px;
+	display: inline-block;
+}
+
+.info{
+	height:auto;
+	background-color: #fff;
+	width: auto;
+	padding:15px;
+	margin:10px 0;
+	font-size:14px;
+}
+.info li{
+	overflow: hidden;
+	line-height: 30px;
+}
+.info li span{
+	float:left;
+	width: 25%;
+}
+.info li p{
+	float:left;
+	width:75%;
+}
+.info .i-tel p{
+	overflow: hidden;
+}
+.info .i-tel a{
+	color:#333;
+}
+.info .i-tel img{
+	width:18px;
+	height:18px;
+	float:right;
+	margin-top:6px;
+}
+
+.pro{
+	background-color: #fff;
+	height:54px;
+	padding:0 15px;
+	margin:10px 0;
+	font-size:14px;
+	line-height: 54px;
+}
+.pro img{
+	float: right;
+	width:18px;
+	height:18px;
+	margin-top:18px;
+}
+
+.evaluate{
+	background-color: #fff;
+	padding:15px;
+	margin:10px 0;
+	font-size:14px;
+}
+.evaluate li{
+	overflow: hidden;
+	line-height:30px;
+}
+.evaluate li p{
+	float:left;
+}
+.evaluate li p em{
+	color:#a7190e;
+	margin-left:15px;
+}
+.evaluate li span{
+	float:right;
+	color:#a7190e;
+}
+
+.btm-tool{
+	background-color: #fff;
+	border-top:1px solid #eee;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: table;
+	padding:11px 0 6px;
+}
+.btm-tool li{
+	width: 50%;
+	display: table-cell;
+	vertical-align: middle;
+	border-right:1px solid #eee;
+	text-align: center;
+	cursor: pointer;
+}
+.btm-tool li:last-child{
+	border-right:none;
+}
+.btm-tool li a{
+	width:18px;
+	height:17px;
+	display: block;
+	margin:auto;
+}
+.btm-tool .bt-love a{
+	background: url(../../images/icon_add.png) no-repeat;
+	background-size:contain;
+}
+.btm-tool .on a{
+	background: url(../images/icon_add_press.png) no-repeat;
+	background-size:contain;
+}
+
+.btm-tool .bt-talk a{
+	background: url(../../images/icon_talk_press.png) no-repeat;
+	background-size:contain;
+}
+.btm-tool li span{
+	font-size:12px;
+}
+
+
+/*服务商-公司简介*/
+.profile .main{
+	font-size:14px;
+	color:#333;
+	width: 100%;
+}
+.profile .main p{
+	margin:20px 15px;
+	line-height: 30px;
+}
+
+/*仓主中心-我的邀请码*/
+.profile .main p em{
+	color:#ffa600;
+	font-size:18px;
+	font-weight: 600;
+	margin:0 10px;
+}

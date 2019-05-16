@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/lib/nouislider/nouislider.min.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>服务商列表</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+<div class="faclist-wrap">
+
+    <div class="wh-lbs-hd">
+        <div class="wh-sub-search clearfix">
+            <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+            <div class="search-box">
+                <input type="text" class="bdr-text-ipt search-ipt" placeholder="请输入关键字">
+                <span class="iconfont icon-search">&#xe6c3;</span>
+            </div>
+            <a class="filter" href="javascript:;">筛选<i class="iconfont icon-filter">&#xe653;</i></a>
+        </div>
+        <p class="wh-lbs-range">距离 (英里)</p>
+        <div class="range-lbs-area">
+            <div class="noUiSlider"></div>
+            <span class="noLimit">不限</span>
+        </div>
+    </div>
+    <hr class="line">
+
+    <!-- 列表 -->
+    <div class="facList-wrap">
+        <ul class="wh-warehouse-list">
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">广州柏汇鸿物流有限公司</h6>
+                    <p class="list-address">
+                        海南省/陵水黎族自治县本号镇
+                    </p>
+                    <p class="business-type">主营业务：<span class="sp">关务</span></p>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">广州柏汇鸿物流有限公司</h6>
+                    <p class="list-address">
+                        海南省/陵水黎族自治县本号镇
+                    </p>
+                    <p class="business-type">主营业务：<span class="sp">关务</span></p>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">广州柏汇鸿物流有限公司</h6>
+                    <p class="list-address">
+                        海南省/陵水黎族自治县本号镇
+                    </p>
+                    <p class="business-type">主营业务：<span class="sp">关务</span></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="wh-next-page mb10">
+        <p class="msg-up">
+            <i class="iconfont icon-up-arrow">&#xe605;</i>上拉查看下一页
+        </p>
+        <p class="mes-load" style="display:none;">
+            <i class="iconfont icon-up-load">&#xe62d;</i>正在加载数据
+        </p>
+        <p class="page-bt">查看第<span class="num">2</span>页（共<span class="num2">10</span>页）</p>
+    </div>	
+    
+    <!-- 侧边栏内容 -->
+    <div class="filter-pop">
+        <a href="javascript:;" class="iconfont close">&#xe80c;</a>
+        <a href="javascript:;" class="reset">重置</a>
+
+        <div class="canvas-con-item">
+            <div class="tags-hd">
+                服务商类型
+                <a href="javascript:;" class="all">全选</a>
+            </div>
+
+            <div class="tags-bd">
+                <a class="wltag" href="javascript:;">
+                    关务
+                </a>
+                <a class="wltag" href="javascript:;">
+                    船务
+                </a>
+                <a class="wltag" href="javascript:;">
+                    外汇
+                </a>
+                <a class="wltag" href="javascript:;">
+                    退税
+                </a>
+                <a class="wltag" href="javascript:;">
+                    物流
+                </a>
+                <a class="wltag" href="javascript:;">
+                    信保
+                </a>
+                <a class="wltag" href="javascript:;">
+                    金融
+                </a>
+                <a class="wltag" href="javascript:;">
+                    货代
+                </a>
+                <a class="wltag" href="javascript:;">
+                    进出口代理
+                </a>
+                <a class="wltag" href="javascript:;">
+                    其他
+                </a>
+            </div>
+        </div>
+        <a class="define-btn">确定</a>
+    </div>    
+</div>
+    <!-- JS -->
+    <script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+    <script src="./assets/lib/nouislider/nouislider.min.js"></script>
+    <script src="./js/facilitatorList.js"></script>
+        
+</body>
+</html>

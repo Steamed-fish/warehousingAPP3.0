@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>仓主中心-基本资料</title>
+  <script src="./js/kd/responsive.kd.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/kd/main.kd.css">
+  <link rel="stylesheet" href="./css/kd/siloInfo.kd.css">
+
+
+</head>
+<body>
+
+	<header class="wh-cm-hd">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    我的资料
+</header>
+
+	<div class="cell">基本信息</div>
+	<div class="wh-data-wrap">
+
+		<form class="wh-form">
+
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					公司代码
+				</label>
+				<input type="text" placeholder="58" class="bdr-text-ipt bdr-text-ipt-d " disabled>
+			</div>
+
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					邮箱
+				</label>
+				<input type="text" placeholder="" class="bdr-text-ipt">
+			</div>
+
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					<span class="point">*</span>
+					职位
+				</label>
+				<input type="text" placeholder="" class="bdr-text-ipt">
+			</div>
+
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					<span class="point">*</span>
+					电话
+				</label>
+				<input type="text" placeholder="" class="bdr-text-ipt">
+			</div>
+
+			
+		</form>
+	</div>
+		
+	<div class="cell">公司信息</div>	
+	<div class="wh-data-wrap">
+
+		<form class="wh-form">
+
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					<span class="point">*</span>
+					公司名称
+				</label>
+				<input type="text" placeholder="" class="bdr-text-ipt">
+			</div>
+
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					<span class="point">*</span>
+					公司联系人
+				</label>
+				<input type="text" placeholder="" class="bdr-text-ipt">
+			</div>
+
+			<div class="wh-form-group wh-form-lm-3 clearfix">
+				<label for="" class="label">
+					<span class="point">*</span>
+					所在地
+				</label>
+				<input type="text" placeholder="广东省/广州市/天河区" class="bdr-text-ipt">
+				<a href="javascript:;" class="wh-area-link">
+					地区选择
+					<i class="iconfont icon-r">&#xe603;</i>
+				</a>
+			</div>
+
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					<span class="point">*</span>
+					详细地址
+				</label>
+				<input type="text" placeholder="" value="广东省广州市天河区员村二横路" class="bdr-text-ipt">
+			</div>
+			
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					主营业务
+				</label>
+				<textarea placeholder="输入主营业务" rows="8" class="bdr-textarea-ipt"></textarea>				
+			</div>
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					公司简介
+				</label>
+				<textarea placeholder="输入简介内容" rows="8" class="bdr-textarea-ipt"></textarea>				
+			</div>
+
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					公司LOGO
+				</label>
+				<div class="file-wrap-box file-wrap-box-2">
+					<i class="iconfont icon-plus">&#xe610;</i>
+					<input type="file" class="file-box">
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="cell">资料认证</div>
+	<div class="wh-data-wrap">
+
+		<form class="wh-form">
+
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					营业执照号
+				</label>
+				<input type="text" placeholder="123456" class="bdr-text-ipt bdr-text-ipt-d " disabled>
+			</div>
+
+			<div class="wh-form-group clearfix">
+				<label for="" class="label">
+					营业执照扫描件
+				</label>
+				<div class="file-wrap-box file-wrap-box-2">
+					<i class="iconfont icon-plus">&#xe610;</i>
+					<input type="file" class="file-box">
+				</div>
+			</div>
+
+			
+		</form>
+	</div>
+
+	<div class="wh-form-group wh-group-plr">
+		<button type="submit" class="wh-btn wh-btn-primary wh-btn-block" data-am-modal="{target: '#my-alert-1'}">修改</button>
+	</div>
+
+
+	<!-- 系统提示 弹层 -->
+	<div class="am-modal am-modal-alert wh-modal2" tabindex="-1" id="my-alert-1">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd wh-btn-primary">系统提示</div>
+			<div class="am-modal-bd">
+		
+				<div class="tags-hd">是否确定提交？</div>
+
+			</div>
+			<div class="am-modal-footer">
+				<button type="submit" class="am-modal-btn wh-btn wh-btn-primary">确认</button>
+				<button type="submit" class="am-modal-btn wh-btn wh-btn-cancel" data-am-modal-cancel>取消</button>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<!-- JS -->
+	<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/kd/common.kd.js"></script>
+
+
+</body>
+</html>
+

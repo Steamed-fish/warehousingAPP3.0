@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/lib/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="./assets/lib/citySelect/ydui.css">
+    <link rel="stylesheet" href="./assets/lib/mobileSelect/mobileSelect.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>LBS</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+<div class="lbs-wrap">
+    <div class="wh-lbs-hd">
+        <div class="wh-sub-search clearfix">
+            <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+            <div class="search-box">
+                <input type="text" class="bdr-text-ipt search-ipt" placeholder="请输入关键字">
+                <span class="iconfont icon-search">&#xe6c3;</span>
+            </div>
+            <a class="filter" href="javascript:;">筛选<i class="iconfont icon-filter">&#xe653;</i></a>
+        </div>
+        <p class="wh-lbs-range">距离 (英里)</p>
+        <div class="range-lbs-area">
+            <div class="noUiSlider"></div>
+            <span class="noLimit">不限</span>
+        </div>
+    </div>
+    
+    <nav class="wh-warehouse-tab-wrap clearfix"> 
+        <div class="wh-warehouse-tab-item">
+            <div id="trigger1" class="trigger">排序</div>
+            <i class="iconfont">&#xe60f;</i>
+        </div>
+        <div class="wh-warehouse-tab-item">
+            <input type="text" class="cell-input" readonly="" id="J_Address" value="" placeholder="位置" /> 
+            <i class="iconfont">&#xe60f;</i>
+        </div>
+        <div class="wh-warehouse-tab-item">
+            <div id="trigger2" class="trigger">面积</div>
+            <i class="iconfont">&#xe60f;</i>
+        </div>
+        <div class="wh-warehouse-tab-item tc">
+            <a href="javascript:;" class="map-loc">
+                <i class="iconfont icon-map">&#xe600;</i>
+                找仓
+            </a>
+        </div>
+    </nav>
+
+    <div class="wh-lbs-con">
+
+        <!-- 搜索历史列表 -->
+        <ul class="wh-lbs-list">
+            <li class="wh-lbs-item">
+                <i class="iconfont icon-loc">&#xe6bf;</i>
+                附近
+            </li>
+            <li class="wh-lbs-item">
+                <i class="iconfont icon-map">&#xe616;</i>
+                美国纽约
+            </li>
+            <li class="wh-lbs-item">
+                <i class="iconfont icon-map">&#xe616;</i>
+                英国伦敦
+            </li>
+            <li class="wh-lbs-item">
+                <i class="iconfont icon-map">&#xe616;</i>
+                印度孟买
+            </li>
+        </ul>
+
+    </div>
+
+
+    <!-- 侧边栏内容 -->
+    <div class="filter-pop">
+        <a href="javascript:;" class="iconfont close">&#xe80c;</a>
+        <a href="javascript:;" class="reset">重置</a>
+
+        <div class="canvas-con-item">
+            <div class="tags-hd">
+                仓库类型
+                <a href="javascript:;" class="all">全选</a>
+            </div>
+
+            <div class="tags-bd">
+                <a class="wltag" href="javascript:;">
+                    普通仓
+                </a>
+                <a class="wltag" href="javascript:;">
+                    简易仓
+                </a>
+                <a class="wltag" href="javascript:;">
+                    冷藏仓
+                </a>
+                <a class="wltag" href="javascript:;">
+                    冷冻仓
+                </a>
+                <a class="wltag" href="javascript:;">
+                    恒温仓
+                </a>
+                <a class="wltag" href="javascript:;">
+                    气调仓
+                </a>
+                <a class="wltag" href="javascript:;">
+                    危险品
+                </a>
+                <a class="wltag" href="javascript:;">
+                    露天堆场
+                </a>
+                <a class="wltag" href="javascript:;">
+                    其他
+                </a>
+            </div>
+        </div>
+        <div class="canvas-con-item">
+            <div class="tags-hd">
+                服务范围
+                <a href="javascript:;" class="all">全选</a>
+            </div>
+
+            <div class="tags-bd">
+                <a class="wltag" href="javascript:;">
+                    分拣
+                </a>
+                <a class="wltag" href="javascript:;">
+                    打包
+                </a>
+                <a class="wltag" href="javascript:;">
+                    打托盘
+                </a>
+                <a class="wltag" href="javascript:;">
+                    装卸
+                </a>
+                <a class="wltag" href="javascript:;">
+                    拆零拣选
+                </a>
+                <a class="wltag" href="javascript:;">
+                    代理报关
+                </a>
+                <a class="wltag" href="javascript:;">
+                    代理销售
+                </a>
+                <a class="wltag" href="javascript:;">
+                    缠绕膜
+                </a>
+                <a class="wltag" href="javascript:;">
+                    运输
+                </a>
+                <a class="wltag" href="javascript:;">
+                    配送
+                </a>
+                <a class="wltag" href="javascript:;">
+                    代管发
+                </a>
+            </div>
+        </div>
+        <div class="canvas-con-item">
+            <div class="tags-hd">
+                仓库模式
+                <a href="javascript:;" class="all">全选</a>
+            </div>
+
+            <div class="tags-bd">
+                <a class="wltag" href="javascript:;">
+                    平地库
+                </a>
+                <a class="wltag" href="javascript:;">
+                    高台库
+                </a>
+                <a class="wltag" href="javascript:;">
+                    多层库
+                </a>
+                <a class="wltag" href="javascript:;">
+                    地下库
+                </a>
+            </div>
+        </div>
+        <div class="canvas-con-item">
+            <div class="tags-hd">
+                仓库地坪
+                <a href="javascript:;" class="all">全选</a>
+            </div>
+
+            <div class="tags-bd">
+                <a class="wltag" href="javascript:;">
+                    水泥面
+                </a>
+                <a class="wltag" href="javascript:;">
+                    耐磨地砖
+                </a>
+                <a class="wltag" href="javascript:;">
+                    混泥土
+                </a>
+                <a class="wltag" href="javascript:;">
+                    金刚砂
+                </a>
+                <a class="wltag" href="javascript:;">
+                    环氧
+                </a>
+                <a class="wltag" href="javascript:;">
+                    防尘
+                </a>
+                <a class="wltag" href="javascript:;">
+                    防潮
+                </a>
+                <a class="wltag" href="javascript:;">
+                    防静电
+                </a>
+            </div>
+        </div>
+        <div class="canvas-con-item">
+            <div class="tags-hd">
+                仓库功能
+                <a href="javascript:;" class="all">全选</a>
+            </div>
+
+            <div class="tags-bd">
+                <a class="wltag" href="javascript:;">
+                    保税仓
+                </a>
+                <a class="wltag" href="javascript:;">
+                    电商仓
+                </a>
+                <a class="wltag" href="javascript:;">
+                    FBA
+                </a>
+                <a class="wltag" href="javascript:;">
+                    立体仓
+                </a>
+                <a class="wltag" href="javascript:;">
+                    自动化仓
+                </a>
+                <a class="wltag" href="javascript:;">
+                    智能仓
+                </a>
+            </div>
+        </div>
+        <a class="define-btn">确定</a>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+<script src="./assets/lib/nouislider/nouislider.min.js"></script>
+<script src="./assets/lib/citySelect/ydui.citys.js"></script> 
+<script src="./assets/lib/citySelect/ydui.js"></script> 
+<script src="./assets/lib/mobileSelect/mobileSelect.js"></script> 
+<script src="./js/LBS.js"></script>      
+
+</body>
+</html>

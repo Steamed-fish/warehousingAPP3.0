@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>货主中心-已租仓库-评价</title>
+  <script src="./js/kd/responsive.kd.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/kd/flexible.debug.kd.css">
+  <link rel="stylesheet" href="./css/kd/main.kd.css">
+    <link rel="stylesheet" href="./css/kd/siloComment.kd.css">
+<link rel="stylesheet" type="text/css" href="./css/kd/jquery.raty.kd.css" >
+
+
+</head>
+<body class="profile">
+
+<header class="wh-cm-hd">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    评价
+</header>
+
+
+<div class="main">
+
+    <ul>
+       <li>
+          <span>操作效率</span>
+          <div class="start">        
+            <input id="start-1" type="text" value="0.0" class="input hint"  readonly="readonly">
+            <p id="star1"></p>
+          </div> 
+       </li>
+       <li>
+          <span>服务态度</span>
+          <div class="start">
+            
+            <input id="start-2" type="text" value="0.0" class="input hint" readonly>
+            <p id="star2" data-num="3.5"></p>
+          </div> 
+       </li>
+       <li>
+          <span>货物安全</span>
+          <div class="start">
+            
+            <input id="start-3" type="text" value="0.0" class="input hint" readonly>
+            <p id="star3" data-num="3.5"></p>
+          </div> 
+       </li>
+       <li>
+          <span>与描述相符</span>
+          <div class="start">
+            
+            <input id="start-4" type="text" value="0.0" class="input hint" readonly>
+            <p id="star4" data-num="3.5"></p>
+          </div> 
+       </li>
+       
+    </ul>
+
+    <ul class="andComment">
+        <li>
+          <span>综合得分</span>
+          <div class="start">
+            <input id="" type="text" value="0.0" class="input hint">
+          </div> 
+          <textarea placeholder="请对服务进行评价" rows="8" class="bdr-textarea-ipt"></textarea>
+       </li>
+       <li>
+          <span>对仓主的评价</span>
+          <div class="start">
+            
+            <input id="start-5" type="text" value="0.0" class="input hint" readonly>
+            <p id="star5" data-num="3.5"></p>
+          </div> 
+          <textarea placeholder="请对仓主进行评价" rows="8" class="bdr-textarea-ipt"></textarea>
+       </li>
+    </ul>
+    
+
+
+  <div class="am-modal-footer">
+    <button type="submit" class="am-modal-btn wh-btn wh-btn-primary">确认</button>
+    <button type="submit" class="am-modal-btn wh-btn wh-btn-cancel" data-am-modal-cancel>取消</button>
+  </div>
+
+
+</div>
+
+
+
+
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/kd/common.kd.js"></script>
+<script src="./js/kd/mobiscroll.javascript.kd.min.js"></script>
+<script src="./js/kd/jquery.raty.kd.js"></script>
+
+<script type="text/javascript">
+  
+  $(document).ready(function(){
+
+      $(function(){
+
+           $("#star1").raty({
+              starOn:'images/star-on.png',
+              starOff:'images/star-off.png',
+              starHalf:'images/star-half.png',
+              targetScore: '#start-1'
+           });
+           $("#star2").raty({
+              starOn:'images/star-on.png',
+              starOff:'images/star-off.png',
+              starHalf:'images/star-half.png',
+              targetScore: '#start-2'
+           });
+           $("#star3").raty({
+              starOn:'images/star-on.png',
+              starOff:'images/star-off.png',
+              starHalf:'images/star-half.png',
+              targetScore: '#start-3'
+           });
+           $("#star4").raty({
+              starOn:'images/star-on.png',
+              starOff:'images/star-off.png',
+              starHalf:'images/star-half.png',
+              targetScore: '#start-4'
+           });
+           $("#star5").raty({
+              starOn:'images/star-on.png',
+              starOff:'images/star-off.png',
+              starHalf:'images/star-half.png',
+              targetScore: '#start-5'
+           });
+        });
+      
+
+  })
+
+
+  
+</script>
+
+
+
+
+</body>
+</html>
+

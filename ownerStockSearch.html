@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>货主中心-库存查询</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+<div class="stock-search-layout">
+	<header class="wh-cm-hd wh-cm-hd2">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    库存查询
+</header>
+
+
+	<div class="stock-search-box">
+		<p><input type="text" placeholder="货物编号/仓库名称/货物名字" class="stock-search-ipt"></p>
+		<p><button class="stock-search-btn">查询</button></p>
+	</div>
+
+	<ul class="stock-search-results">
+		<li>
+			<span class="iconfont stock-search-down">&#xe60f;</span>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物：
+					<i>XXX</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物编码：
+					<i>1213221</i>
+				</span>
+				<span class="stock-search-label label-r">可用库存：
+					<i>12</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">总库存：
+					<i>250</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">创建时间：
+					<i>2017/11/01 12:29</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">仓库：
+					<i>深圳龙华新区普通仓库</i>
+				</span>
+			</p>
+		</li>
+		<li>
+			<span class="iconfont stock-search-down">&#xe60f;</span>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物：
+					<i>XXX</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物编码：
+					<i>1213221</i>
+				</span>
+				<span class="stock-search-label label-r">可用库存：
+					<i>12</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">总库存：
+					<i>250</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">创建时间：
+					<i>2017/11/01 12:29</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">仓库：
+					<i>深圳龙华新区普通仓库</i>
+				</span>
+			</p>
+		</li>
+		<li>
+			<span class="iconfont stock-search-down">&#xe60f;</span>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物：
+					<i>XXX</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物编码：
+					<i>1213221</i>
+				</span>
+				<span class="stock-search-label label-r">可用库存：
+					<i>12</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">总库存：
+					<i>250</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">创建时间：
+					<i>2017/11/01 12:29</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">仓库：
+					<i>深圳龙华新区普通仓库</i>
+				</span>
+			</p>
+		</li>
+		<li>
+			<span class="iconfont stock-search-down">&#xe60f;</span>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物：
+					<i>XXX</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物编码：
+					<i>1213221</i>
+				</span>
+				<span class="stock-search-label label-r">可用库存：
+					<i>12</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">总库存：
+					<i>250</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">创建时间：
+					<i>2017/11/01 12:29</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">仓库：
+					<i>深圳龙华新区普通仓库</i>
+				</span>
+			</p>
+		</li>
+		<li>
+			<span class="iconfont stock-search-down">&#xe60f;</span>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物：
+					<i>XXX</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物编码：
+					<i>1213221</i>
+				</span>
+				<span class="stock-search-label label-r">可用库存：
+					<i>12</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">总库存：
+					<i>250</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">创建时间：
+					<i>2017/11/01 12:29</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">仓库：
+					<i>深圳龙华新区普通仓库</i>
+				</span>
+			</p>
+		</li>
+		<li>
+			<span class="iconfont stock-search-down">&#xe60f;</span>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物：
+					<i>XXX</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">货物编码：
+					<i>1213221</i>
+				</span>
+				<span class="stock-search-label label-r">可用库存：
+					<i>12</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">总库存：
+					<i>250</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">创建时间：
+					<i>2017/11/01 12:29</i>
+				</span>
+			</p>
+			<p class="stock-search-item">
+				<span class="stock-search-label">仓库：
+					<i>深圳龙华新区普通仓库</i>
+				</span>
+			</p>
+		</li>
+	</ul>
+
+</div>
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+<script>
+	$('.stock-search-down').click(function(){
+		$(this).parent('li').toggleClass('stock-search-switch').siblings('li').removeClass('stock-search-switch');
+	})
+</script>
+</body>
+</html>
+

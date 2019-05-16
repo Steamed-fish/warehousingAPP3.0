@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>手机注册</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+	<link rel="stylesheet" href="./assets/lib/amazeui/amazeui.chosen.css">
+</head>
+<body>
+
+	<header class="wh-cm-hd">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    注册
+</header>
+
+
+
+	<div class="wh-form-wrap">
+
+		<form class="wh-form">
+
+			<div class="wh-form-group clearfix">
+				<button class="type-hd-btn type-hd-btn-fst active">企业会员</button>		
+				<button class="type-hd-btn">个人会员</button>		
+			</div>	  
+			<div class="wh-form-group clearfix">
+				<div class="wh-form-select wh-form-select-type">
+					<label for="wh-ipt-user" class="wh-form-sm-typer">会员选择</label>
+					<select data-am-selected="{maxHeight: 200}">
+						<option selected>仓主</option>
+						<option>服务商</option>
+						<option>货主</option>
+					</select>	
+				</div>			
+			</div>	  
+
+			<div class="wh-form-group clearfix">
+				<div class="wh-form-sm-2 wh-form-select">
+					<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+						<option selected>中国大陆+86</option>
+						<option>中国台湾地区+886</option>
+						<option>中国香港+852</option>
+						<option>马来西亚+60</option>
+					</select>
+				</div>
+				<div class="wh-form-sm-10">
+					<input type="number" id="mobile" class="white-ipt code" name="verify" placeholder="手机号码" required maxlength="6">  
+				</div>
+			</div>
+
+			<div class="wh-form-group">
+				<input type="password" id="password" class="white-ipt" placeholder="密码">
+			</div>
+
+			<div class="wh-form-group">
+				<input type="password" id="repassword" class="white-ipt" placeholder="确认密码" onChange="checkpas();">
+				<p class="pasTip"><span class="iconfont icon-x">&#xe66e;</span>两次输入的密码不一致</p>
+			</div>
+
+			<div class="wh-form-group code-group clearfix">
+				<input type="password" class="white-ipt pas-ipt2" placeholder="验证码">
+				<div class="pas-code-text">
+					<input type="button" class="code-mes obtain generate_code" value=" 获取验证码">  
+				</div>
+			</div>
+
+			<div class="wh-form-group">
+				<button type="submit" id="registBtn" class="wh-btn wh-btn-primary wh-btn-block">注册</button>
+			</div>
+
+			<div class="wh-form-group">
+				<div class="checkbox-con">
+					<label>
+						<input type="checkbox" class="checkbox"> 
+						我已阅读并接受
+						<a class="key-text" id="key-text-btn" href="javascript:;">《用户使用协议》</a>
+					</label>
+				</div>
+			</div>
+
+		</form>
+
+	</div>
+
+	<!-- 协议弹层 -->
+	<div class="wh-opa"></div>
+	<div class="wh-pop">
+		<span class="iconfont icon-close" id="pop-close">&#xe80c;</span>
+		<div class="wh-deal-con">
+			<p class="title">链仓、手机应用程序和服务组成一个在线平台，以下统称“链仓”。在注册之前，请您仔细阅读本协议。</p>
+			<p class="title">一、接受条款</p>
+			1、本协议内容包括协议正文及所有链仓已经发布或将来可能发布的各类规则。所有规则为协议不可分割的一部分，与协议正文具有同等法律效力，详细请阅读相关规则。
+			<br>
+			2、以任何方式进入链仓并使用服务即表示您已充分阅读、理解并同意接受本协议的条款和条件(以下合称“条款”)。
+			<br>
+			3、链仓有权在必要时修改服务协议，并在链仓显著位置上提示修改内容。注册用户如果不同意所改动的内容，可以取消注册，并推出链仓的服务。如果用户继续享用网络服务，则视为接受服务协议的变动。链仓保留随时修改或中断服务而不需通知用户的权利。</p>
+			<p class="title">二、注册须知</p>
+			1、您确认，在您完成注册程序或以其他链仓允许的方式实际使用服务时，您应当是具备完全民事权利能力和与所从事的民事行为相适应的行为能力的自然人、法人或其他组织。若您不具备前述主体资格，请勿使用注册。<br>
+			2、您可以设置登录名及联系人姓名等账号信息，但您设置信息不得侵犯或涉嫌侵犯他人合法权益，符合国家相关的法律法规。如您设置的信息涉嫌侵犯他人合法权益，链仓有权终止向您提供服务，并注销您的账户。<br>
+			3、在完成注册时，您需按照法律法规要求，按相应页面的提示，提供真实、及时、完整和准确资料。如有合理理由怀疑您提供的资料错误、不实、过时或不完整的，链仓有权向您发出询问及/或要求改正的通知，并有权直接做出删除相应资料的处理，直至中止、终止对您提供部分或全部链仓服务，链仓对此不承担任何责任，您将承担因此产生的任何直接或间接损失及不利后果。</p>
+		</div>
+	</div>
+	<!-- JS -->
+	<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+
+	<script src="./assets/lib/amazeui/amazeui.chosen.min.js"></script>
+
+<script type="text/javascript">  
+
+$(function(){  
+	$(".generate_code").click(function(){  
+	var disabled = $(".generate_code").attr("disabled");  
+	if(disabled){  
+		return false;  
+	}  
+	if($("#mobile").val() == "" || isNaN($("#mobile").val()) || $("#mobile").val().length != 11 ){  
+		alert("请填写正确的手机号！");  
+		return false;  
+	}  
+	$.ajax({  
+		async:false,  
+		type: "GET",  
+		url: "{:U('User/sms')}",  
+		data: {mobile:$("#mobile").val()},  
+		dataType: "json",  
+		async:false,  
+		success:function(data){  
+		console.log(data);  
+		settime();  
+		},  
+		error:function(err){  
+		console.log(err);  
+		}  
+	});  
+	});  
+	var countdown=60;  
+	var _generate_code = $(".generate_code");  
+	function settime() {  
+	if (countdown == 0) {  
+		_generate_code.attr("disabled",false);  
+		_generate_code.val("重新获取验证码");  
+		countdown = 60;  
+		return false;  
+	} else {  
+		$(".generate_code").attr("disabled", true);  
+		_generate_code.val(countdown);  
+		countdown--;  
+	}  
+	setTimeout(function() {  
+		settime();  
+	},1000);  
+	}  
+
+})  
+
+
+//验证确认密码
+$(".pasTip").hide();
+function checkpas(){
+	var pas1=document.getElementById("password").value;
+	var pas2=document.getElementById("repassword").value;
+	if(pas1!=pas2){
+		$(".pasTip").show();
+	}else{
+		$(".pasTip").hide();
+	}
+}
+
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>个人中心-货源列表-添加货物</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+<div class="bg-white per-goods-details-layout per-goods-add-layout">
+	<header class="wh-cm-hd wh-cm-hd2">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    添加货物
+</header>
+
+    <hr class="wh-hd-line">
+    <div class="row">
+        <h6 class="title">货物详情</h6>
+        <ul class="goods-list">
+            <li>
+                <label><i class="c-red">*</i>货物名称</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>所属类目</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>货物品牌</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>货物型号</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>货物数量</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>货物编码</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>起批量</label>
+                <input type="text">
+            </li>
+            <li>
+                <label><i class="c-red">*</i>货物价格</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>货物规格</label>
+                <input type="text">
+            </li>
+            <li>
+                <label><i class="c-red">*</i>单位</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>供货期</label>
+                <input type="text">
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <h6 class="title">添加货物橱窗图：</h6>
+        <div class="pic-add-box clearfix">
+            <ul class="pic-add-list">
+                <li class="pic-add-item">
+                    <span class="iconfont delete">&#xe80c;</span>
+                    <img src="./images/xq01.jpg" alt="">
+                </li>
+                <li class="pic-add-item">
+                    <span class="iconfont delete">&#xe80c;</span>
+                    <img src="./images/xq01.jpg" alt="">
+                </li>
+            </ul>
+            <div class="add-btn-box">
+                <input type="file" class="file">
+                <span class="iconfont add-btn">&#xe6be;</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h6 class="title">添加货物详情图：</h6>
+        <div class="pic-add-box clearfix">
+            <ul class="pic-add-list">
+                <li class="pic-add-item">
+                    <span class="iconfont delete">&#xe80c;</span>
+                    <img src="./images/xq01.jpg" alt="">
+                </li>
+                <li class="pic-add-item">
+                    <span class="iconfont delete">&#xe80c;</span>
+                    <img src="./images/xq01.jpg" alt="">
+                </li>
+            </ul>
+            <div class="add-btn-box">
+                <input type="file" class="file">
+                <span class="iconfont add-btn">&#xe6be;</span>
+            </div>
+        </div>
+        <p class="title-s">货物详情图预览：</p>
+        <div class="goods-pic">
+            <p><img src="./images/xq01.jpg" alt=""></p>
+            <p><img src="./images/xq02.jpg" alt=""></p>
+        </div>
+    </div>
+    <div class="save-btn-row">
+        <button class="save-btn">保存</button>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+</body>
+</html>

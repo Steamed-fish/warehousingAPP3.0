@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>服务商详情</title>
+  <script src="./js/kd/responsive.kd.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/kd/flexible.debug.kd.css">
+  <link rel="stylesheet" href="./css/kd/main.kd.css">
+  <link rel="stylesheet" href="./css/kd/serverDetail.kd.css">
+
+
+</head>
+<body>
+
+<header class="wh-cm-hd">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    服务商详情
+</header>
+
+
+
+<div class="main">
+	<div class="info-title">
+		<img src="images/pic_head.jpg" alt="" title="">
+		<div class="it-text">
+			<p>盛辉物流集团有限公司</p>
+			<em>进出口</em>
+		</div>
+		
+	</div>
+
+	<ul class="info">
+		<li>
+			<span>好评率</span>
+			<p>99.00%</p>
+		</li>
+		<li>
+			<span>所在地</span>
+			<p>福建省/福州市/鼓楼区</p>
+		</li>
+		<li class="i-tel">
+			<span>服务电话</span>
+			<p>
+				<a href="tel:0898-32568771">0898-32568771</a>
+				<img src="images/icon_tel.png">
+			</p>
+		</li>
+		<li>
+			<span>主营业务</span>
+			<p>钢材</p>
+		</li>
+	</ul>
+
+	<div class="pro"  onclick="window.location.href='profile.html'">
+		<span>公司简介</span>
+		<img src="images/icon_jianjie.png">
+	</div>
+
+	<ul class="evaluate">
+		<li>
+			<p>服务态度<em>4.0</em></p>
+			<span>高于同行1.43%</span>
+		</li>
+		<li>
+			<p>服务效率<em>4.0</em></p>
+			<span>高于同行1.43%</span>
+		</li>
+		<li>
+			<p>服务能力<em>4.0</em></p>
+			<span>高于同行1.40%</span>
+		</li>
+	</ul>
+</div>
+
+<ul class="btm-tool">
+	<li class="bt-love">
+		<a></a>
+		<span>关注</span>
+	</li>
+	<li class="bt-talk" onclick="window.location.href='#'">
+		<a></a>
+		<span>客服</span>
+	</li>
+</ul>
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/kd/common.kd.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+	    $(document).bind('click',function(event){
+			$(event.target).closest('.bt-love').toggleClass('on');
+		})
+
+
+	})
+
+
+	
+</script>
+
+
+
+</body>
+</html>
+

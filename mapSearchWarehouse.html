@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="./assets/lib/mobileSelect/mobileSelect.css">
+    <link rel="stylesheet" href="./assets/lib/citySelect/ydui.css">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>地图找仓_链仓</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+<div class="mapsearch-wrap">
+
+	<header class="wh-cm-hd wh-cm-hd2">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    地图找仓
+</header>
+
+
+	<div class="search-hd">
+		<div class="search-layer">
+			<form action="">
+				<input class="serach-ipt" type="text" placeholder="输入地标/街道/仓库名称/仓库编号" value="">
+				<button type="button" class="search-btn am-icon-search"></button>
+			</form>
+		</div>
+
+		<div class="search-list-nav clearfix">
+			<div class="option">
+				<a class="option-link" href="javascript:;">
+					<input type="text" class="cell-input" readonly="" id="J_Address" value="" placeholder="地区" />
+				</a>
+				<span class="upd-arow"></span>
+			</div>
+			<div class="option">
+				<a id="typeTrigger" class="option-link" href="javascript:;">类型</a>
+				<span class="upd-arow"></span>
+			</div>
+			<div class="option">
+				<a id="modelTrigger" class="option-link" href="javascript:;">模式</a>
+				<span class="upd-arow"></span>
+			</div>
+			<div class="option">
+				<a id="areaTrigger" class="option-link" href="javascript:;">面积</a>
+				<span class="upd-arow"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="mac-box">
+		<img src="./assets/lib/map2_files/gzw.png" alt="">
+		<span class="aims" id="aimsBtn">点击地标</span>
+	</div>
+
+	<!-- 查询结果 -->
+	<div class="search-result" id="searchResult">
+		<div class="result-hd">共找到16条相关仓源</div>
+		<div class="result-bd">
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+			<a class="result-item" href="javascript:;">
+				<span class="result-title">安徽合肥肥东50000平电商仓出租</span>
+				<div class="result-bt">
+					<span class="area"><i class="iconfont icon-area"></i>总面积 8946.0㎡</span>
+					<span class="price">￥<i class="num">8</i>/㎡/ 月</span>
+				</div>
+				<span class="iconfont icon-r">&#xe603;</span>
+			</a>
+		</div>
+	</div>
+
+	<!-- 点击地标显示结果 -->
+	<div class="search-result-sp" id="resultAims">
+		<ul class="wh-warehouse-list">
+			<li class="wh-warehouse-list-item clearfix">
+				<div class="item-l">
+					<span class="w-tag">仓库</span>
+					<img src="images/pic2.jpg" alt="">
+				</div>
+				<div class="item-r">
+					<h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+					<p class="list-address">
+						安徽省/合肥市/瑶海区
+					</p>
+					<p class="list-area">总面积：10000m²</p>
+					<div class="list-ft">
+						<p class="list-price">
+							<span class="price-dollar">￥</span>
+							<span class="price-num"> 50</span>
+							RMB/㎡
+						</p>
+						<span class="list-comment">已有 
+							<i class="list-num">10</i> 
+							人评论
+						</span>
+					</div>
+					<HR class="line"></HR>
+					<p class="list-tab">
+						<span class="tab-item">打包</span>
+						<span class="tab-item">打托盘</span>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+<script src="./assets/lib/mobileSelect/mobileSelect.js"></script> 
+<script src="./assets/lib/citySelect/ydui.citys.js"></script> 
+<script src="./assets/lib/citySelect/ydui.js"></script> 
+<script src="./js/mapSearchWarehouse.js"></script> 
+<script src="./assets/lib/amazeui/hammer.min.js"></script> 
+	
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>仓主中心-费用设置-新增</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+<div class="cost-add-layout">
+	<header class="wh-cm-hd wh-cm-hd2">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    费用设置
+</header>
+
+
+	<div class="wh-form-wrap cost-set-hd">
+		<form class="wh-form">
+			<div class="wh-form-group">
+				<input type="text" class="white-ipt" placeholder="费用方案名称">
+			</div>
+		</form>
+	</div>
+
+	<section class="cost-set-bd">
+		<div id="body-1">
+			<div class="cell">选择费用项目</div>
+			<div class="wh-data-wrap">
+
+				<div class="wh-form-group menbers-box clearfix">
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>费用项目</option>
+							<option>费用项目</option>
+							<option>费用项目</option>
+							<option>费用项目</option>
+						</select>
+					</div>
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>单位</option>
+							<option>台</option>
+							<option>张</option>
+							<option>块</option>
+						</select>
+					</div>	
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>周期</option>
+							<option>日</option>
+							<option>月</option>
+							<option>年</option>
+						</select>
+					</div>	
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<input type="text" value="" placeholder="单价" />
+					</div>
+				</div>
+
+				<div class="wh-form-group menbers-box clearfix">
+
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>币种</option>
+							<option>人民币</option>
+							<option>美元</option>
+							<option>欧元</option>
+						</select>
+					</div>
+
+					<div class="wh-form-data-sm-2 wh-form-select ipt-bz">
+						<input type="text" value="" placeholder="备注" />
+					</div>
+					<button type="button" class="am-btn disc-btn" data-am-button>面议</button>
+					
+				</div>
+			</div>
+			<div class="wh-data-wrap">
+
+				<div class="wh-form-group menbers-box clearfix">
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>费用项目</option>
+							<option>费用项目</option>
+							<option>费用项目</option>
+							<option>费用项目</option>
+						</select>
+					</div>
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>单位</option>
+							<option>台</option>
+							<option>张</option>
+							<option>块</option>
+						</select>
+					</div>	
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>周期</option>
+							<option>日</option>
+							<option>月</option>
+							<option>年</option>
+						</select>
+					</div>	
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<input type="text" value="" placeholder="单价" />
+					</div>
+				</div>
+
+				<div class="wh-form-group menbers-box clearfix">
+
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>币种</option>
+							<option>人民币</option>
+							<option>美元</option>
+							<option>欧元</option>
+						</select>
+					</div>
+
+					<div class="wh-form-data-sm-2 wh-form-select ipt-bz">
+						<input type="text" value="" placeholder="备注" />
+					</div>
+					<button type="button" class="am-btn disc-btn" data-am-button>面议</button>
+					<button type="button" class="iconfont btn-delete">&#xe606;</button>
+				</div>
+			</div>
+		</div>
+		<div class="cell-footer">
+			<span>添加费用项目</span>
+			<button type="button" class="iconfont btn-add" id="btn-add-1">&#xe61b;</button>
+		</div>
+	</section>
+
+	<section class="cost-set-bd">
+		<div id="body-2">
+			<div class="cell">自定义费用项目</div>
+			<div class="wh-data-wrap">
+
+				<div class="wh-form-group menbers-box clearfix">
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<input type="text" value="" placeholder="项目名称" />
+					</div>
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>单位</option>
+							<option>台</option>
+							<option>张</option>
+							<option>块</option>
+						</select>
+					</div>	
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>周期</option>
+							<option>日</option>
+							<option>月</option>
+							<option>年</option>
+						</select>
+					</div>	
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<input type="text" value="" placeholder="单价" />
+					</div>
+				</div>
+
+				<div class="wh-form-group menbers-box clearfix">
+
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>币种</option>
+							<option>人民币</option>
+							<option>美元</option>
+							<option>欧元</option>
+						</select>
+					</div>
+
+					<div class="wh-form-data-sm-2 wh-form-select ipt-bz">
+						<input type="text" value="" placeholder="备注" />
+					</div>
+					<button type="button" class="am-btn disc-btn" data-am-button>面议</button>
+					
+				</div>
+			</div>
+			<div class="wh-data-wrap">
+
+				<div class="wh-form-group menbers-box clearfix">
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<input type="text" value="" placeholder="项目名称" />
+					</div>
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>单位</option>
+							<option>台</option>
+							<option>张</option>
+							<option>块</option>
+						</select>
+					</div>	
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>周期</option>
+							<option>日</option>
+							<option>月</option>
+							<option>年</option>
+						</select>
+					</div>	
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<input type="text" value="" placeholder="单价" />
+					</div>
+				</div>
+
+				<div class="wh-form-group menbers-box clearfix">
+
+					<div class="wh-form-data-sm-2 wh-form-select">
+						<select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+							<option selected>币种</option>
+							<option>人民币</option>
+							<option>美元</option>
+							<option>欧元</option>
+						</select>
+					</div>
+
+					<div class="wh-form-data-sm-2 wh-form-select ipt-bz">
+						<input type="text" value="" placeholder="备注" />
+					</div>
+					<button type="button" class="am-btn disc-btn" data-am-button>面议</button>
+					<button type="button" class="iconfont btn-delete">&#xe606;</button>
+				</div>
+			</div>
+		</div>
+		<div class="cell-footer">
+			<span>添加费用项目</span>
+			<button type="button" class="iconfont btn-add" id="btn-add-2">&#xe61b;</button>
+		</div>
+	</section>
+
+	<div class="wh-form-group cost-set-ft">
+		<button type="submit" class="wh-btn wh-btn-primary wh-btn-block btn-2">确定</button>
+		<button type="submit" class="wh-btn wh-btn-primary wh-btn-block btn-2">取消</button>
+	</div>
+	
+</div>	
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/kd/common.kd.js"></script>
+
+<script type="text/javascript">
+var u = navigator.userAgent;
+var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+if(isAndroid){
+	$('.btn-delete').css('min-width','16%');
+	$('.cell-footer .btn-add').css('min-width','16%')
+}
+
+
+$(document).ready(function(){
+
+	$(document).on('click','.btn-delete',function(){
+		$(this).parent().parent().fadeOut('fast');
+	});
+		
+	$(document).on('click','#btn-add-1',function(){
+
+		$("#body-1").append('<div class="wh-data-wrap">'+
+
+					'<div class="wh-form-group menbers-box clearfix">'+
+						'<div class="wh-form-data-sm-2 wh-form-select">'+
+							'<select data-am-selected="{maxHeight: 200}" class="wh-select-box">'+
+								'<option selected>费用项目</option>'+
+								'<option>费用项目</option>'+
+								'<option>费用项目</option>'+
+								'<option>费用项目</option>'+
+							'</select>'+
+						'</div>'+
+						'<div class="wh-form-data-sm-2 wh-form-select">'+
+							'<select data-am-selected="{maxHeight: 200}" class="wh-select-box">'+
+								'<option selected>单位</option>'+
+								'<option>台</option>'+
+								'<option>张</option>'+
+								'<option>块</option>'+
+							'</select>'+
+						'</div>	'+
+						'<div class="wh-form-data-sm-2 wh-form-select">'+
+							'<select data-am-selected="{maxHeight: 200}" class="wh-select-box">'+
+								'<option selected>周期</option>'+
+								'<option>日</option>'+
+								'<option>月</option>'+
+								'<option>年</option>'+
+							'</select>'+
+						'</div>	'+
+						'<div class="wh-form-data-sm-2 wh-form-select">'+
+							'<input type="text" value="" placeholder="单价" />'+
+						'</div>'+
+					'</div>'+
+
+					'<div class="wh-form-group menbers-box clearfix">'+
+
+						'<div class="wh-form-data-sm-2 wh-form-select">'+
+							'<select data-am-selected="{maxHeight: 200}" class="wh-select-box">'+
+								'<option selected>币种</option>'+
+								'<option>人民币</option>'+
+								'<option>美元</option>'+
+								'<option>欧元</option>'+
+							'</select>'+
+						'</div>'+
+
+						'<div class="wh-form-data-sm-2 wh-form-select ipt-bz">'+
+							'<input type="text" value="" placeholder="备注" />'+
+						'</div>'+
+						'<button type="button" class="am-btn disc-btn" data-am-button>面议</button>'+
+						'<button type="button" class="iconfont btn-delete">&#xe606;</button>'+
+					'</div>'+
+				'</div>');
+
+		$('.wh-select-box').selected();
+	})
+
+	$(document).on('click','#btn-add-2',function(){
+
+		$("#body-2").append('<div class="wh-data-wrap">'+
+
+					'<div class="wh-form-group menbers-box clearfix">'+
+						'<div class="wh-form-data-sm-2 wh-form-select">'+
+							'<select data-am-selected="{maxHeight: 200}" class="wh-select-box">'+
+								'<option selected>费用项目</option>'+
+								'<option>费用项目</option>'+
+								'<option>费用项目</option>'+
+								'<option>费用项目</option>'+
+							'</select>'+
+						'</div>'+
+						'<div class="wh-form-data-sm-2 wh-form-select">'+
+							'<select data-am-selected="{maxHeight: 200}" class="wh-select-box">'+
+								'<option selected>单位</option>'+
+								'<option>台</option>'+
+								'<option>张</option>'+
+								'<option>块</option>'+
+							'</select>'+
+						'</div>	'+
+						'<div class="wh-form-data-sm-2 wh-form-select">'+
+							'<select data-am-selected="{maxHeight: 200}" class="wh-select-box">'+
+								'<option selected>周期</option>'+
+								'<option>日</option>'+
+								'<option>月</option>'+
+								'<option>年</option>'+
+							'</select>'+
+						'</div>	'+
+						'<div class="wh-form-data-sm-2 wh-form-select">'+
+							'<input type="text" value="" placeholder="单价" />'+
+						'</div>'+
+					'</div>'+
+
+					'<div class="wh-form-group menbers-box clearfix">'+
+
+						'<div class="wh-form-data-sm-2 wh-form-select">'+
+							'<select data-am-selected="{maxHeight: 200}" class="wh-select-box">'+
+								'<option selected>币种</option>'+
+								'<option>人民币</option>'+
+								'<option>美元</option>'+
+								'<option>欧元</option>'+
+							'</select>'+
+						'</div>'+
+
+						'<div class="wh-form-data-sm-2 wh-form-select ipt-bz">'+
+							'<input type="text" value="" placeholder="备注" />'+
+						'</div>'+
+						'<button type="button" class="am-btn disc-btn" data-am-button>面议</button>'+
+						'<button type="button" class="iconfont btn-delete">&#xe606;</button>'+
+					'</div>'+
+				'</div>');
+
+		$('.wh-select-box').selected();
+	})
+
+
+});
+
+</script>
+
+</body>
+</html>

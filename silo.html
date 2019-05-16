@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>货主中心-已租仓库</title>
+  <script src="./js/kd/responsive.kd.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/kd/flexible.debug.kd.css">
+  <link rel="stylesheet" href="./css/kd/main.kd.css">
+  <link rel="stylesheet" href="./css/kd/ownerLease.kd.css">
+  <link rel="stylesheet" type="text/css" href="./css/kd/mobiscroll.javascript.kd.min.css" >
+  <link rel="stylesheet" type="text/css" href="./css/kd/ios.kd.css" >
+  <link rel="stylesheet" href="./css/kd/ownerPayAdd.kd.css">
+</head>
+<body class="profile">
+
+<header class="wh-cm-hd">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    已租仓库
+</header>
+
+
+<div class="main">
+
+  <div class="screen">
+    <div class="s-id"><input type="text" value="" placeholder="签约单编号" /></div>
+    <div class="seletc-date">
+      <p><input id="date-start" value="" placeholder="开始时间" /><span class="icon-x">x</span></p>
+      <p><input id="date-end" value="" placeholder="结束时间" /><span class="icon-x">x</span></p>
+    </div>
+    <button type="button">查询</button>
+  </div>
+
+  <!-- 筛选 -->
+  <div class="screen_type">
+    <ul>
+      <li class="current">全部</li>
+      <li>待商家确认</li>
+      <li>可启用</li>
+      <li>已生效</li>
+      <li>可取消</li>
+      <li>已失效</li>
+    </ul>
+  </div>
+
+  <section>
+    <div class="s-header">
+      <p>签约单编号：<span>SO7503874834730</span></p>
+      <em>待商家确认</em>
+    </div>
+    <div class="s-main">
+      <ul>
+        <li>仓库名称：<span>深圳宝安区普通仓库</span></li>
+        <li>仓主：<span>浙江中仓仓储股份有限公司</span></li>
+        <li>创建时间：<span>2017-09-29</span></li>
+        <li>仓库编号：<span>LC20170920918245</span></li>
+        <li>生效时间: <span>2017-09-28</span></li>
+        <li>签约周期(月): <span>3</span></li>
+        <li>失效时间: <span>2017-12-28</span></li>
+        <li>费用：<em>查看费用明细</em></li>
+      </ul>
+      <div class="s-pic" style="background: url(images/pic.jpg) no-repeat;"></div>
+    </div>
+    <ul class="s-footer">
+      <li data-am-modal="{target: '#my-alert-3'}">改价</li>
+      <li data-am-modal="{target: '#my-alert-1'}">确定</li>
+      <li>取消</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="s-header">
+      <p>签约单编号：<span>SO7503874834730</span></p>
+      <em>已生效</em>
+    </div>
+    <div class="s-main">
+      <ul>
+        <li>仓库名称：<span>深圳宝安区普通仓库</span></li>
+        <li>仓主：<span>浙江中仓仓储股份有限公司</span></li>
+        <li>创建时间：<span>2017-09-29</span></li>
+        <li>仓库编号：<span>LC20170920918245</span></li>
+        <li>生效时间: <span>2017-09-28</span></li>
+        <li>签约周期(月): <span>3</span></li>
+        <li>失效时间: <span>2017-12-28</span></li>
+        <li>费用：<em>查看费用明细</em></li>
+      </ul>
+      <div class="s-pic" style="background: url(images/pic.jpg) no-repeat;"></div>
+    </div>
+    <ul class="s-footer">
+      <li onclick="window.location.href='siloComment.html'">评价</li>
+      <li  data-am-modal="{target: '#my-alert-2'}">投诉</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="s-header">
+      <p>签约单编号：<span>SO7503874834730</span></p>
+      <em>已失效</em>
+    </div>
+    <div class="s-main">
+      <ul>
+        <li>仓库名称：<span>深圳宝安区普通仓库</span></li>
+        <li>仓主：<span>浙江中仓仓储股份有限公司</span></li>
+        <li>创建时间：<span>2017-09-29</span></li>
+        <li>仓库编号：<span>LC20170920918245</span></li>
+        <li>生效时间: <span>2017-09-28</span></li>
+        <li>签约周期(月): <span>3</span></li>
+        <li>失效时间: <span>2017-12-28</span></li>
+        <li>费用：<em>查看费用明细</em></li>
+      </ul>
+      <div class="s-pic" style="background: url(images/pic.jpg) no-repeat;"></div>
+    </div>
+    <ul class="s-footer">
+      <li  onclick="window.location.href='siloComment.html'">评价</li>
+      <li  data-am-modal="{target: '#my-alert-2'}">投诉</li>
+      <li>下载合同</li>
+      <li>查看合同</li>
+    </ul>
+  </section>
+
+  <div class="wh-next-page">
+    <p class="msg-up">
+      <i class="iconfont icon-up-arrow">&#xe605;</i>上拉查看下一页
+    </p>
+    <p class="mes-load" style="display:none;">
+      <i class="iconfont icon-up-load">&#xe62d;</i>正在加载数据
+    </p>
+    <p class="page-bt">查看第<span class="num">2</span>页（共<span class="num2">10</span>页）</p>
+  </div>
+
+</div>
+
+  <!-- 确定 弹层 -->
+  <div class="am-modal am-modal-alert wh-modal2" tabindex="-1" id="my-alert-1">
+    <div class="am-modal-dialog">
+      <div class="am-modal-hd wh-btn-primary">确认密码</div>
+      <div class="am-modal-bd">
+    
+      <div class="wh-form-group">
+        <input type="password" class="white-ipt wh-password" placeholder="密码">
+      </div>
+
+      </div>
+      <div class="am-modal-footer">
+        <button type="submit" class="am-modal-btn wh-btn wh-btn-primary">确认</button>
+        <button type="submit" class="am-modal-btn wh-btn wh-btn-cancel" data-am-modal-cancel>取消</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 投诉 弹层 -->
+  <div class="am-modal am-modal-alert wh-modal2" tabindex="-1" id="my-alert-2">
+    <div class="am-modal-dialog">
+      <div class="am-modal-hd wh-btn-primary">投诉</div>
+      <div class="am-modal-bd">
+    
+      <div class="wh-form-group">
+        <textarea placeholder="请输入您遇到的问题并提交到平台，200字以内。" rows="8" class="bdr-textarea-ipt"></textarea>
+      </div>
+
+      </div>
+      <div class="am-modal-footer">
+        <button type="submit" class="am-modal-btn wh-btn wh-btn-primary">确认</button>
+        <button type="submit" class="am-modal-btn wh-btn wh-btn-cancel" data-am-modal-cancel>取消</button>
+      </div>
+    </div>
+  </div>
+
+ <!-- 改价 弹层 -->
+  <div class="am-modal am-modal-alert wh-modal2" tabindex="-1" id="my-alert-3">
+    <div class="am-modal-dialog big-box">
+      <div class="am-modal-hd wh-btn-primary">改价</div>
+      <div class="am-modal-bd">
+
+          <section class="wh-silo-wh wh-silo-cp">
+              <div id="body-1">
+
+                <div class="wh-data-wrap">
+                  <div class="wh-form-group wh-silo-hd clearfix">
+                      <div class="wh-form-data-sm-2 wh-form-select">费用项目</div>
+                      <div class="wh-form-data-sm-2 wh-form-select">单位</div>
+                      <div class="wh-form-data-sm-2 wh-form-select">周期</div>
+                      <div class="wh-form-data-sm-2 wh-form-select">单价</div>
+                      <div class="wh-form-data-sm-2 wh-form-select">币种</div>
+                  </div>
+                  <div class="wh-form-group clearfix">
+                      <div class="wh-form-data-sm-2 wh-form-select">
+                        <select data-am-selected class="wh-select-box">
+                            <option selected>费用项目</option>
+                            <option>仓储费</option>
+                            <option>物流费</option>
+                            <option>码头费</option>
+                            <option>打包费</option>
+                            <option>寄件费</option>
+                        </select>
+                      </div>
+                      <div class="wh-form-data-sm-2 wh-form-select">
+                        <select data-am-selected class="wh-select-box">
+                            <option selected>单位</option>
+                            <option>件</option>
+                            <option>吨</option>
+                        </select>
+                      </div>	
+                      <div class="wh-form-data-sm-2 wh-form-select">
+                        <select data-am-selected class="wh-select-box">
+                            <option selected>周期</option>
+                            <option>日</option>
+                            <option>月</option>
+                        </select>
+                      </div>
+                      <div class="wh-form-data-sm-2 wh-form-select">
+                          <input type="text" placeholder="单价" data-am-modal="{target: '#my-alert-4'}">
+                      </div>
+                      <div class="wh-form-data-sm-2 wh-form-select">
+                        <select data-am-selected class="wh-select-box">
+                          <option selected>币种</option>
+                          <option>人民币</option>
+                          <option>美元</option>
+                          <option>欧元</option>
+                        </select>
+                      </div>
+                      <button type="button" class="iconfont btn-add" id="btn-add-1">&#xe61b;</button>
+                  </div>
+
+                </div>
+                
+              </div>
+            </section>    
+
+      </div>
+      <div class="am-modal-footer">
+        <button type="submit" class="am-modal-btn wh-btn wh-btn-primary">确认</button>
+        <button type="submit" class="am-modal-btn wh-btn wh-btn-cancel" data-am-modal-cancel>取消</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 提示 弹层 -->
+  <div class="am-modal am-modal-alert wh-modal2 sl-msg-modal" tabindex="-1" id="my-alert-4">
+    <div class="am-modal-dialog big-box">
+      <div class="am-modal-hd wh-btn-primary">提示</div>
+      <div class="am-modal-bd"> 
+          费用项目不能为空
+      </div>
+      <div class="am-modal-footer">
+        <button type="submit" class="am-modal-btn wh-btn wh-btn-primary">确认</button>
+        <button type="submit" class="am-modal-btn wh-btn wh-btn-cancel" data-am-modal-cancel>取消</button>
+      </div>
+    </div>
+  </div>
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/kd/common.kd.js"></script>
+<script src="./js/kd/mobiscroll.javascript.kd.min.js"></script>
+
+<script type="text/javascript">
+  
+  $(document).ready(function(){
+
+      /*mobiscroll插件*/
+      $(function(){
+        mobiscroll.settings = {
+            theme: 'ios',
+            display: 'center',
+            lang: 'zh'
+        };
+     
+      // 开始日期
+      mobiscroll.date('#date-start');
+      // 结束日期
+      mobiscroll.date('#date-end');
+
+      $('.seletc-date .icon-x').click(function(){
+        $(this).siblings('.mbsc-comp').val('');
+      })
+
+      })
+
+      /*点击tab切换样式*/
+      $(document).on('click','.screen_type ul li',function(){
+        $(this).addClass('current').siblings('li').removeClass('current');
+      })
+
+  })
+  
+</script>
+
+
+<script type="text/javascript">
+  var u = navigator.userAgent;
+  var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+  var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+  if(isAndroid){
+    $(".wh-data-wrap .wh-form-data-sm-3").css('width','30%');
+    $('.btn-delete').css('min-width','16%');
+    $('.cell-footer .btn-add').css('min-width','16%')
+  }
+  
+  $(document).ready(function(){
+  
+  $(document).on('click','.btn-delete',function(){
+    $(this).parents('.wh-data-wrap').fadeOut('fast');
+  });
+  $(document).on('click','#btn-add-1',function(){
+  
+  $("#body-1").append(
+        '<div class="wh-data-wrap">'+
+  
+          '<div class="wh-form-group clearfix">'+
+            '<div class="wh-form-data-sm-2 wh-form-select">'+
+              '<select data-am-selected class="wh-select-box">'+
+                '<option selected>请选择</option>'+
+                '<option>仓储费</option>'+
+                '<option>物流费</option>'+
+                '<option>码头费</option>'+
+                '<option>打包费</option>'+
+                '<option>寄件费</option>'+
+              '</select>'+
+            '</div>'+
+            '<div class="wh-form-data-sm-2 wh-form-select">'+
+              '<select data-am-selected class="wh-select-box">'+
+                '<option selected>请选择</option>'+
+                '<option>件</option>'+
+                '<option>吨</option>'+
+              '</select>'+
+            '</div>'+
+            '<div class="wh-form-data-sm-2 wh-form-select">'+
+              '<select data-am-selected class="wh-select-box">'+
+                '<option selected>请选择</option>'+
+                '<option>日</option>'+
+                '<option>月</option>'+
+              '</select>'+
+            '</div>	'+
+            '<div class="wh-form-data-sm-2 wh-form-select">'+
+                '<input type="text" />'+
+            '</div>	'+
+            '<div class="wh-form-data-sm-2 wh-form-select">'+
+              '<select data-am-selected class="wh-select-box">'+
+                '<option selected>请选择</option>'+
+                '<option>人民币</option>'+
+                '<option>美元</option>'+
+                '<option>欧元</option>'+
+              '</select>'+
+            '</div>	'+
+              '<button type="button" class="iconfont btn-delete">&#xe606;</button>'+
+          '</div>'+
+
+        '</div>');
+  
+  $('.wh-select-box').selected();
+  })
+  
+  });
+  
+  </script>
+
+</body>
+</html>
+

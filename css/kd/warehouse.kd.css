@@ -1,0 +1,163 @@
+.wh-wrap{
+    background-color: #f4f4f4;
+}
+.section .cell{
+    width:100%;
+    display: block;
+    overflow: hidden;
+    margin:10px 0;
+    background-color:#fff;
+    position: relative;
+}
+.section .cell .wh-figure{
+    float:left;
+    width: 170px;
+}
+.section .cell .wh-figure img{
+    width:160px;
+    height:134px;
+}
+.cell-text{
+    overflow: hidden;
+}
+.cell-text .title{
+    font-size:15px;
+    color:#333;
+    margin:5px 0;
+    display: block;
+}
+.wh-tag {
+    display: inline-block;
+    padding:0 16px;
+    height: 26px;
+    line-height: 26px;
+    background: #636c8a;
+    color: #fff;
+    font-size: 11px;
+    border-radius: .3rem;
+}
+.cell-text .location{
+    font-size:13px;
+    background: url(../../images/icon_address.png) no-repeat left center;
+    background-size:14px;
+    padding-left:18px;
+    margin:3px 0;
+    display: block;
+    color:#ffa600;
+}
+
+.cell-text .wh-info-area{
+    display: block;
+    color:#999;
+    font-size:12px;
+}
+.cell-text .price{
+    color:#333;
+    font-size:12px;
+}
+.cell-text .price .num{
+    color:#ffa600;
+    font-size:17px;
+    font-weight: bold;
+}
+.cell-text .comment{
+    color:#999;
+    position: absolute;
+    right:10px;
+    bottom: 5px;
+    font-size:12px;
+}
+.cell-text .comment .num{
+    color:#ffa600;
+    font-size:12px;
+}
+
+
+
+.screen_type{
+    margin:0 0 10px 0;
+    background:#fff;
+    height: 44px;
+    width: 100%;
+    box-shadow: 0 6px 10px 0 rgba(232, 232, 232, 0.4), 0 1px 0 0 rgba(232, 232, 232, 0.6);
+    -webkit-box-shadow: 0 6px 10px 0 rgba(232, 232, 232, 0.4), 0 1px 0 0 rgba(232, 232, 232, 0.6);
+}
+.screen_type ul{
+    padding:0 auto 0;
+    display: table;
+    width:100%;
+}
+.screen_type ul li{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    height:44px;
+    font-size:13px;
+    color:#666;
+    width:25%;
+    background: url(../../images/flite_icon_down.png) no-repeat 90% center;
+    background-size: 8px;
+}
+.screen_type ul li.active{
+    background: url(../../images/flite_icon_up.png) no-repeat 90% center;
+    background-size: 8px;
+}
+.screen_type ul li:first-child{
+    background:none;
+}
+
+
+.wh-cm-hd {
+    background:#fff;
+    padding-top:1rem;
+}
+.wh-cm-hd .icon-back {
+    color: #333;
+}
+ a:active, a:focus, a:hover, a:visited{
+    color:#ccc;
+}
+.my-search{
+    
+}
+.my-search .search-ipt{
+    width:70%;
+    float:left;
+    margin:0 0 0 6rem;
+    font-size:3rem;
+}
+.my-search .icon-search{
+    float:left;
+    font-size:4rem;
+    margin:0.2rem 0 0 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:320px){
+
+    .section .cell .wh-figure{
+        width: 130px;
+    }
+
+    .section .cell .wh-figure img{
+        width:120px;
+        height: 100px;
+    }
+}

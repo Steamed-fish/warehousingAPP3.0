@@ -1,0 +1,1 @@
+$(function(){$(".selectAll").on("change",function(){var e=$(this).parents(".wh-modal-alert").find(".bd .am-checkbox"),a=e.find(".am-ucheck-checkbox");this.checked?($(this).parent(".all").addClass("all-on"),e.addClass("wh-nohover"),a.uCheck("check")):($(this).parent(".all").removeClass("all-on"),e.removeClass("wh-nohover"),a.uCheck("uncheck"))})});

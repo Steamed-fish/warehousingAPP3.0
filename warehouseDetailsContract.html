@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="./css/kd/mobiscroll.javascript.kd.min.css" >
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>仓库详情-我要签约</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+<div class="wh-details-contract-layout">
+
+	<header class="wh-cm-hd wh-cm-hd2">
+		<a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+		我要签约
+	</header>
+
+	<hr class="contract-line">
+	<div class="contract-con">
+		<section class="contract-plate">
+			<p class="contract-title">签约预览明细</p>
+			<div class="contract-item">
+				购买者
+				<span class="contract-msg-r">XXXXXXXXXXX</span>
+			</div>
+		</section>
+		<hr class="contract-line">
+
+		<section class="contract-plate">
+			<p class="contract-title">签约订购服务</p>
+			<div class="contract-item">
+				名称
+				<span class="contract-msg-r">安徽合肥瑶海40000平冷库出租</span>
+			</div>
+		</section>
+		<hr class="contract-line">
+
+		<section class="contract-plate">
+			<div class="contract-item">
+				<p class="contract-area-l">租赁面积(m²)</p>
+				<div class="contract-area-r"><input type="text" placeholder="请输入租赁面积" class="contract-area-ipt"></div>
+			</div>
+		</section>
+		<hr class="contract-line">
+
+		<section class="contract-plate contract-sv">
+			<div class="contract-item clearfix">
+				<p class="contract-area-l">服务项目</p>
+				<div class="contract-area-r">
+					<span class="contract-msg-r">请选择服务项目</span>
+					<!-- <span>物流费</span>
+					<span>物流费</span> -->
+				</div>
+				<a href="javascript:;" class="am-btn js-modal-open contract-serv-btn">选择</a>
+			</div>
+		</section>
+		<hr class="contract-line">
+
+		<section class="contract-plate">
+			<div class="contract-item">
+				<p class="contract-area-l">费用</p>
+				<div class="contract-area-r cost-con" id="costCon">
+					<span class="cost-msg" id="costMsg">请选择服务项目</span>
+					<p class="cost-item">物流费1：12港币/件</p>
+					<p class="cost-item">物流费2：12港币/件</p>
+					<p class="cost-item">物流费3：12港币/件</p>
+					<p class="cost-item">物流费4：12港币/件</p>
+				</div>
+			</div>
+		</section>
+		<hr class="contract-line">
+
+		<section class="contract-plate">
+			<div class="contract-item">
+				<p class="contract-area-l">订购周期</p>
+				<div class="contract-area-r clearfix">
+					<p class="period-item"><input id="date-start" value="" placeholder="开始时间" /><i class="icon-x">x</i></p>
+					<i class="time-line"></i>
+					<p class="period-item"><input id="date-end" value="" placeholder="结束时间" /><i class="icon-x">x</i></p>
+				</div>
+			</div>
+		</section>
+		<hr class="contract-line">
+	</div>
+
+	<div class="contract-deal">提交即代表您已阅读并接受<a class="deal" id="key-text-btn" href="javascript:;">《用户使用协议》</a></div>
+	
+	<button type="submit" class="submit-btn">提交</button>
+
+	<!-- 协议弹层 -->
+	<div class="wh-opa"></div>
+	<div class="wh-pop">
+		<span class="iconfont icon-close" id="pop-close">&#xe80c;</span>
+		<div class="wh-deal-con">
+			<p class="title">链仓、手机应用程序和服务组成一个在线平台，以下统称“链仓”。在注册之前，请您仔细阅读本协议。</p>
+			<p class="title">一、接受条款</p>
+			1、本协议内容包括协议正文及所有链仓已经发布或将来可能发布的各类规则。所有规则为协议不可分割的一部分，与协议正文具有同等法律效力，详细请阅读相关规则。
+			<br>
+			2、以任何方式进入链仓并使用服务即表示您已充分阅读、理解并同意接受本协议的条款和条件(以下合称“条款”)。
+			<br>
+			3、链仓有权在必要时修改服务协议，并在链仓显著位置上提示修改内容。注册用户如果不同意所改动的内容，可以取消注册，并推出链仓的服务。如果用户继续享用网络服务，则视为接受服务协议的变动。链仓保留随时修改或中断服务而不需通知用户的权利。
+			<p class="title">二、注册须知</p>
+			1、您确认，在您完成注册程序或以其他链仓允许的方式实际使用服务时，您应当是具备完全民事权利能力和与所从事的民事行为相适应的行为能力的自然人、法人或其他组织。若您不具备前述主体资格，请勿使用注册。<br>
+			2、您可以设置登录名及联系人姓名等账号信息，但您设置信息不得侵犯或涉嫌侵犯他人合法权益，符合国家相关的法律法规。如您设置的信息涉嫌侵犯他人合法权益，链仓有权终止向您提供服务，并注销您的账户。<br>
+			3、在完成注册时，您需按照法律法规要求，按相应页面的提示，提供真实、及时、完整和准确资料。如有合理理由怀疑您提供的资料错误、不实、过时或不完整的，链仓有权向您发出询问及/或要求改正的通知，并有权直接做出删除相应资料的处理，直至中止、终止对您提供部分或全部链仓服务，链仓对此不承担任何责任，您将承担因此产生的任何直接或间接损失及不利后果。
+		</div>
+	</div>
+
+    <div class="am-modal contract-serv-modal" id="contractServModal">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">
+                <label class="all am-checkbox">
+                    <input class="selectAll" type="checkbox" value="" data-am-ucheck>
+                    服务项目
+                </label> 
+            </div>
+            <div class="am-modal-bd">                  
+                <label class="am-checkbox">
+                    <input type="checkbox" class="am-ucheck-checkbox" value="" data-am-ucheck>
+                    物流费1
+                </label>
+                <label class="am-checkbox">
+                    <input type="checkbox" class="am-ucheck-checkbox" value="" data-am-ucheck>
+                    物流费2
+                </label>
+                <label class="am-checkbox">
+                    <input type="checkbox" class="am-ucheck-checkbox" value="" data-am-ucheck>
+                    物流费3
+                </label>
+                <label class="am-checkbox">
+                    <input type="checkbox" class="am-ucheck-checkbox" value="" data-am-ucheck>
+                    物流费4
+                </label>
+            </div>
+            <div class="am-modal-ft clearfix">
+				<button type="submit" class="am-modal-btn">取消</button>
+                <button type="submit" class="am-modal-btn confirm-btn">确认</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="am-modal contract-submit-modal" tabindex="-1" id="contracSubmitModal">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd">
+				<a href="javascript: void(0)" class="am-close" data-am-modal-close>&times;</a>
+			</div>
+			<div class="am-modal-bd">是否确定提交？</div>
+			<div class="am-modal-footer">
+				<span class="am-modal-btn">确定</span>
+			</div>
+		</div>
+	</div>  
+
+</div>
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+<script src="./js/kd/mobiscroll.javascript.kd.min.js"></script>
+<script src="./js/warehouseDetailsContract.js"></script>
+
+</body>
+</html>

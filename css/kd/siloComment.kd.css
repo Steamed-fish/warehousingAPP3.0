@@ -1,0 +1,71 @@
+body{
+	background-color: #fff;
+}
+.am-modal-footer .wh-btn-primary{
+	float:left;
+	width:48%!important;
+	border-radius: 2px;
+	height:36px;
+	font-size:15px;
+	color:#fff;
+	border:none;
+}
+.am-modal-footer .wh-btn-cancel{
+	float:right;
+	width:48%;
+	border-radius: 2px;
+	height:36px;
+	font-size:15px;
+	color:#fff;
+	background-color:#d6d6d6; 
+	border:none;
+}
+
+
+.main{
+	padding:15px 15px 30px;
+}
+.main ul li{
+	overflow: hidden;
+	height:44px;
+	line-height: 44px;
+	margin-bottom: 10px;
+}
+.main ul li span{
+	float:left;
+	font-size:14px;
+	color:#333;
+}
+.main ul li .start{
+	float:right;
+	overflow: hidden;
+}
+.main ul li .input{
+	width:40px;
+	text-align: right;
+	color:#ffa600;
+	font-size:15px;
+	background: none;
+	display: inline-block;
+	float: right;
+	margin-top:2px;
+	border:none;
+}
+.main ul li .start p{
+	float:right;
+	
+}
+.main ul li .start p img{
+	width:28px;
+	margin-bottom: 8px;
+}
+
+.main .andComment li{
+	height:auto;
+}
+.main .andComment li textarea{
+	overflow: hidden;
+    font-size: 15px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}

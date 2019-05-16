@@ -1,0 +1,641 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/lib/swiper/swiper.min.css">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>首页</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/thirdVersionMain.css">
+
+
+</head>
+<body>
+<div class="home-warp">
+
+
+    <!-- 顶部搜索 -->
+    <div class="hm-hd">
+        <div class="wh-sub-search clearfix">
+            <a class="locat" href="javascript:;">广州</a>
+            <div class="search-box">
+                <input type="text" class="bdr-text-ipt search-ipt" placeholder="搜索关键字">
+                <span class="iconfont icon-search">&#xe6c3;</span>
+            </div>
+            <a class="mapsearch-fast" href="javascript:;"><i class="iconfont icon-map">&#xe600;</i> 找仓</a>
+        </div>
+    </div>  
+
+
+    <!-- 焦点图 -->
+    <div class="hm-focus">
+        <div class="focus-in">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="images/slide.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="images/pic.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="images/hd-bg.jpg" alt="">
+                        </a>
+                    </li>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--仓库面积数据-->
+    <div class="hm-area">
+        <div class="hm-area-box">
+            <div class="hm-area-item">
+                <a class="hm-area-in" href="javascript:;">
+                    <div class="hm-area-data">32120m²</div>
+                    总面积
+                </a>
+            </div>
+            <div class="hm-area-item">
+                <a class="hm-area-in" href="javascript:;">
+                    <div class="hm-area-data">2136m²</div>
+                    可租面积
+                </a>
+            </div>
+            <div class="hm-area-item">
+                <a class="hm-area-in" href="javascript:;">
+                    <div class="hm-area-data">991个</div>
+                    覆盖城市
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 二级页面入口 -->
+    <div class="hm-plate">
+        <div class="plate-in clearfix">
+            <a class="plate-item" href="javascript:;">
+                <span class="iconfont wh-icon">&#xe613;</span><br>
+                仓库
+            </a>
+            <a class="plate-item" href="javascript:;">
+                <span class="iconfont sp-icon">&#xe61d;</span><br>
+                服务商
+            </a>
+            <a class="plate-item" href="javascript:;">
+                <span class="iconfont gs-icon">&#xe658;</span><br>
+                货源
+            </a>
+            <a class="plate-item" href="javascript:;">
+                <span class="iconfont lp-icon">&#xe60b;</span><br>
+                物流园区
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- 发布供需 -->
+    <div class="hm-release clearfix">
+        <a class="am-all-block hm-release-supply hm-release-item" href="javascript:;">
+            <span class="hm-release-title">发布供应</span>
+        </a>
+        <a class="am-all-block hm-release-demand hm-release-item" href="javascript:;">
+            <span class="hm-release-title">发布需求</span>
+        </a>
+    </div>
+
+    <hr class="hm-line">
+    <hr class="hm-line">
+
+    <!--最新需求-->
+    <div class="hm-new-demand">
+        <div class="hm-title clearfix">
+            最新需求
+            <a class="hm-more" href="javascript:;">更多</a>
+        </div>
+        <ul class="wh-demand-list">
+            <li class="wh-demand-item">
+               <div class="item-title">
+                   <span class="w-tag">仓库</span>
+                   【广东/佛山/顺德区】寻找【30000000000平米租库】
+               </div>
+               <div class="wh-demand-item-list">
+                   <div class="list-warehouse list-li">
+                       <i class="iconfont icon-cang"></i>
+                       普通仓/电商仓
+                   </div>
+                   <div class="list-address list-li">
+                       <i class="iconfont icon-address"></i>
+                       中国/广东省/广州市/海珠区
+                   </div>
+                   <div class="list-area list-li">
+                       <i class="iconfont icon-area"></i>
+                       最少面积: 10000m²
+
+                       <span class="list-date">2010-01-12</span>
+                   </div>
+                   <div class="list-type list-li">
+                       <i class="iconfont icon-qian"></i>
+                       租赁/托管
+                   </div>
+
+
+                   <a class="list-contact" href="javascript:;">联系洽谈</a>
+               </div>
+           </li>
+            <li class="wh-demand-item">
+                <div class="item-title">
+                    <span class="w-tag">货源</span>
+                    法国拉菲（LAFITE）传奇波尔多干红葡萄酒
+                </div>
+                <div class="wh-demand-item-list">
+
+
+                    <div class="list-area list-li">
+                        <i class="iconfont icon-area"></i>
+                        饮食/生鲜
+
+                        <span class="list-date">2010-01-12</span>
+                    </div>
+                    <div class="list-address list-li">
+                        <i class="iconfont icon-address"></i>
+                        中国 /河南
+                    </div>
+
+                    <a class="list-contact" href="javascript:;">联系洽谈</a>
+                </div>
+            </li>
+            <li class="wh-demand-item">
+                <div class="item-title">
+                    <span class="w-tag">服务商</span>
+                    寻找中国-韩国海运中转节点可提供报关
+                </div>
+                <div class="wh-demand-item-list">
+                    <div class="list-warehouse list-li">
+                        <i class="iconfont icon-area"></i>
+                        批发市场
+
+                        <span class="list-date">2010-01-12</span>
+                    </div>
+                    <div class="list-address list-li">
+                        <i class="iconfont icon-address"></i>
+                        中国 /河南
+                    </div>
+
+                    <a class="list-contact" href="javascript:;">联系洽谈</a>
+                </div>
+            </li>
+            <li class="wh-demand-item">
+                <div class="item-title">
+                    <span class="w-tag">园区</span>
+                    寻找中国-韩国海运中转节点可提供报关
+                </div>
+                <div class="wh-demand-item-list">
+                    <div class="list-warehouse list-li">
+                        <i class="iconfont icon-area"></i>
+                        批发市场
+
+                        <span class="list-date">2010-01-12</span>
+                    </div>
+                    <div class="list-address list-li">
+                        <i class="iconfont icon-address"></i>
+                        中国 /河南
+                    </div>
+
+                    <a class="list-contact" href="javascript:;">联系洽谈</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <hr class="hm-line">
+
+    <!-- 推荐 -->
+    <div class="hm-hot">
+        <div class="hm-title">精品推荐</div>
+        <nav class="hm-hot-nav clearfix">
+            <a class="nav-item item-on" data-nav-type="warehouse" href="javascript:;">仓库</a>
+            <a class="nav-item" data-nav-type="service" href="javascript:;">服务商</a>
+            <a class="nav-item" data-nav-type="goods" href="javascript:;">货源</a>
+            <a class="nav-item" data-nav-type="park" href="javascript:;">物流园区</a>
+        </nav>
+        <ul class="wh-warehouse-list item-on" data-ul-type="warehouse">
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">仓库</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        安徽省/合肥市/瑶海区
+                    </p>
+                    <p class="list-area">总面积：10000m²</p>
+                    <div class="list-ft">
+                        <p class="list-price">
+                            <span class="price-dollar">￥</span>
+                            <span class="price-num"> 50</span>
+                            RMB/㎡
+                        </p>
+                        <span class="list-comment">浏览量
+                            <i class="list-num">1000</i>
+                        </span>
+                    </div>
+                    <HR class="line"></HR>
+                    <p class="list-tab">
+                        <span class="tab-item">打包</span>
+                        <span class="tab-item">打托盘</span>
+                        <span class="tab-item">拆零拣选</span>
+                    </p>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">仓库</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        安徽省/合肥市/瑶海区
+                    </p>
+                    <p class="list-area">总面积：10000m²</p>
+                    <div class="list-ft">
+                        <p class="list-price">
+                            <span class="price-dollar">￥</span>
+                            <span class="price-num"> 50</span>
+                            RMB/㎡
+                        </p>
+                        <span class="list-comment">浏览量
+                            <i class="list-num">1000</i>
+                        </span>
+                    </div>
+                    <HR class="line"></HR>
+                    <p class="list-tab">
+                        <span class="tab-item">打包</span>
+                        <span class="tab-item">打托盘</span>
+                        <span class="tab-item">拆零拣选</span>
+                    </p>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">仓库</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        安徽省/合肥市/瑶海区
+                    </p>
+                    <p class="list-area">总面积：10000m²</p>
+                    <div class="list-ft">
+                        <p class="list-price">
+                            <span class="price-dollar">￥</span>
+                            <span class="price-num"> 50</span>
+                            RMB/㎡
+                        </p>
+                        <span class="list-comment">浏览量
+                            <i class="list-num">1000</i>
+                        </span>
+                    </div>
+                    <HR class="line"></HR>
+                    <p class="list-tab">
+                        <span class="tab-item">打包</span>
+                        <span class="tab-item">打托盘</span>
+                        <span class="tab-item">拆零拣选</span>
+                    </p>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">仓库</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        安徽省/合肥市/瑶海区
+                    </p>
+                    <p class="list-area">总面积：10000m²</p>
+                    <div class="list-ft">
+                        <p class="list-price">
+                            <span class="price-dollar">￥</span>
+                            <span class="price-num"> 50</span>
+                            RMB/㎡
+                        </p>
+                        <span class="list-comment">浏览量
+                            <i class="list-num">1000</i>
+                        </span>
+                    </div>
+                    <HR class="line"></HR>
+                    <p class="list-tab">
+                        <span class="tab-item">打包</span>
+                        <span class="tab-item">打托盘</span>
+                        <span class="tab-item">拆零拣选</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="wh-warehouse-list" data-ul-type="service">
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">服务商</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        海南省/陵水黎族自治县本号镇
+                    </p>
+                    <p class="list-area">
+                        主营业务：<span class="cl">关务</span>
+                    </p>
+                    <span class="list-comment">浏览量
+                            <i class="list-num">1000</i>
+                        </span>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">服务商</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        海南省/陵水黎族自治县本号镇
+                    </p>
+                    <p class="list-area">
+                        主营业务：<span class="cl">关务</span>
+                    </p>
+                    <span class="list-comment">浏览量
+                            <i class="list-num">1000</i>
+                        </span>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">服务商</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        海南省/陵水黎族自治县本号镇
+                    </p>
+                    <p class="list-area">
+                        主营业务：<span class="cl">关务</span>
+                    </p>
+                    <span class="list-comment">浏览量
+                            <i class="list-num">1000</i>
+                        </span>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">服务商</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        海南省/陵水黎族自治县本号镇
+                    </p>
+                    <p class="list-area">
+                        主营业务：<span class="cl">关务</span>
+                    </p>
+                    <span class="list-comment">浏览量
+                            <i class="list-num">1000</i>
+                        </span>
+                </div>
+            </li>
+        </ul>
+        <ul class="wh-warehouse-list" data-ul-type="goods">
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">货源</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        广州柏汇鸿物流有限公司
+                    </p>
+                    <p class="list-area">安徽省/合肥市/瑶海区</p>
+                    <div class="list-ft">
+                        <p class="list-price">
+                            起批价 ￥
+                            <span class="price-num"> 50</span>
+                        </p>
+                        <span class="list-comment">浏览量
+                            <i class="list-num">1000</i>
+                        </span>
+                    </div>
+
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">货源</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        广州柏汇鸿物流有限公司
+                    </p>
+                    <p class="list-area">安徽省/合肥市/瑶海区</p>
+                    <div class="list-ft">
+                        <p class="list-price">
+                            起批价 ￥
+                            <span class="price-num"> 50</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">货源</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        广州柏汇鸿物流有限公司
+                    </p>
+                    <p class="list-area">安徽省/合肥市/瑶海区</p>
+                    <div class="list-ft">
+                        <p class="list-price">
+                            起批价 ￥
+                            <span class="price-num"> 50</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">货源</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        广州柏汇鸿物流有限公司
+                    </p>
+                    <p class="list-area">安徽省/合肥市/瑶海区</p>
+                    <div class="list-ft">
+                        <p class="list-price">
+                            起批价 ￥
+                            <span class="price-num"> 50</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="wh-warehouse-list" data-ul-type="park">
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">物流园区</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        广东省/深圳市/龙岗区
+                    </p>
+                    <p class="list-area">总面积：10000m²</p>
+                    <div class="list-ft">
+                        仓库 | 服务商 | 货主等 <span class="cl">2365</span>个加入者
+                    </div>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">物流园区</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        广东省/深圳市/龙岗区
+                    </p>
+                    <p class="list-area">总面积：10000m²</p>
+                    <div class="list-ft">
+                        仓库 | 服务商 | 货主等 <span class="cl">2365</span>个加入者
+                    </div>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">物流园区</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        广东省/深圳市/龙岗区
+                    </p>
+                    <p class="list-area">总面积：10000m²</p>
+                    <div class="list-ft">
+                        仓库 | 服务商 | 货主等 <span class="cl">2365</span>个加入者
+                    </div>
+                </div>
+            </li>
+            <li class="wh-warehouse-list-item clearfix">
+                <div class="item-l">
+                    <span class="w-tag">物流园区</span>
+                    <img src="images/pic2.jpg" alt="">
+                </div>
+                <div class="item-r">
+                    <h6 class="list-title">安徽合肥肥东50000平电商仓出租</h6>
+                    <p class="list-address">
+                        广东省/深圳市/龙岗区
+                    </p>
+                    <p class="list-area">总面积：10000m²</p>
+                    <div class="list-ft">
+                        仓库 | 服务商 | 货主等 <span class="cl">2365</span>个加入者
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- footer -->
+    <div class="foot-wrap">
+    <hr class="wh-hr2">
+	<footer class="wh-ft clearfix">
+		<a class="wh-ft-item wh-ft-item-on" href="index.html">
+			<span class="iconfont icon-w">&#xe641;</span><br>
+			首页
+		</a>
+		<a class="wh-ft-item" href="warehouseList.html">
+			<span class="iconfont icon-nearby">&#xe794;</span><br>
+			附近
+		</a>
+		<a class="wh-ft-item" href="facilitatorList.html">
+			<span class="iconfont icon-disc">&#xe64a;</span><br>
+			发现
+		</a>
+		<a class="wh-ft-item" href="javascript:;">
+			<span class="iconfont icon-masg">&#xe644;</span><br>
+			消息
+		</a>
+		<a class="wh-ft-item" href="personal.html">
+			<span class="iconfont icon-me">&#xe648;</span><br>
+			我的
+		</a>
+	</footer>
+</div>
+
+<!-- 置顶按钮 -->
+<span class="iconfont icon-totop">&#xe695;</span>	
+
+        
+
+	<!-- JS -->
+    <script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+    
+    <script src="./assets/lib/swiper/swiper.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        $(function(){
+            $('.hm-hot-nav .nav-item').click(function(){
+                var index = $(this).index();
+                var type = $(this).attr('data-nav-type');
+                var that = $(this);
+                $('.wh-warehouse-list').each(function () {
+                    if($(this).attr('data-ul-type')==type){
+                        that.addClass('item-on').siblings('.nav-item').removeClass('item-on');
+                        $(this).fadeIn().siblings('.wh-warehouse-list').fadeOut();
+                    }
+                })
+
+            })
+        });
+    </script>
+</div>
+</body>
+</html>

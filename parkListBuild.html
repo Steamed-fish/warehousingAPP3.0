@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>园区列表-建立园区</title>
+  <script src="./js/responsive.js"></script>
+  <script>
+    if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+     document.documentElement.className = 'pcMode'
+     document.documentElement.setAttribute('data-dpr', 2) // 你的页面不需要设置dpr
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+<div class="park-build-layout">
+    <header class="wh-cm-hd wh-cm-hd2">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    建立园区
+</header>
+
+    
+    <hr class="line">
+    <div class="park-build-con">
+        <div class="park-build-item clearfix">
+            <span class="park-build-label">园区选择</span>
+            <div class="park-build-item-r">
+                <form action="">
+                    <label for="optf" class="item-option">
+                        <input type="radio" class="item-ipt" name="park" id="optf">物流园区
+                    </label>
+                    <label for="opts" class="item-option">
+                        <input type="radio" class="item-ipt" name="park" id="opts">港口
+                    </label>
+                    <label for="optt" class="item-option">
+                        <input type="radio" class="item-ipt" name="park" id="optt">码头
+                    </label>
+                    <label for="optfo" class="item-option">
+                        <input type="radio" class="item-ipt" name="park" id="optfo">批发市场
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="park-build-item park-build-item-s  clearfix">
+            <span class="park-build-label">园区名称</span>
+            <div class="park-build-item-r">
+                <input type="text" class="text-ipt" placeholder="请输入园区名称">
+            </div>
+        </div>
+        <hr class="line">
+        <div class="park-build-item park-build-item-s clearfix">
+            <span class="park-build-label">园区介绍</span>
+            <div class="park-build-item-r">
+                <input type="text" class="text-ipt" placeholder="请介绍该园区">
+            </div>
+        </div>
+        <hr class="line">
+        <div class="park-build-item clearfix">
+            <span class="park-build-label">加入方式</span>
+            <div class="park-build-item-r">
+                <form action="">
+                    <label for="typf" class="item-option">
+                        <input type="radio" class="item-ipt" name="park" id="typf">允许任何人
+                    </label>
+                    <label for="typs" class="item-option">
+                        <input type="radio" class="item-ipt" name="park" id="typs">需要验证
+                    </label>
+                    <label for="typt" class="item-option">
+                        <input type="radio" class="item-ipt" name="park" id="typt">不需要验证
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="park-build-item clearfix">
+            <span class="park-build-label">园区图片</span>
+            <div class="park-build-item-r">
+                <div class="pic-list clearfix">
+                    <div class="pic-li">
+                        <img src="./images/pj.jpg" alt="">
+                    </div>
+                    <div class="file-box">
+                        <input type="file" class="file-ipt">
+                        <span class="file-ico">+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="park-build-btn">发布</button>
+
+</div>
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/fastclick/fastclick.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/common.js"></script>
+
+
+</body>
+</html>
+

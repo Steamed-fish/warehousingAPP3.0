@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>仓主中心-费用设置</title>
+  <script src="./js/kd/responsive.kd.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/fonts/iconfont.css">
+  <link rel="stylesheet" href="./assets/lib/amazeui/amazeui.min.css">
+  <link rel="stylesheet" href="./css/kd/flexible.debug.kd.css">
+  <link rel="stylesheet" href="./css/kd/main.kd.css">
+  <link rel="stylesheet" href="css/kd/ownerPay.kd.css">
+  <link rel="stylesheet" type="text/css" href="css/kd/mobiscroll.javascript.kd.min.css" >
+  <link rel="stylesheet" type="text/css" href="css/kd/ios.kd.css">
+</head>
+<body class="profile">
+
+<header class="wh-cm-hd">
+    <a class="iconfont icon-back" href="javascript:;">&#xe681;</a>
+    费用设置
+</header>
+
+
+<div class="main">
+  <div class="screen">
+    <div class="s-id"><input type="text" value="" placeholder="名称" /></div>
+    
+    <div class="wh-form-group menbers-box clearfix">
+      <div class="wh-form-select">
+        <select data-am-selected="{maxHeight: 200}" class="wh-select-box">
+          <option selected>全部状态</option>
+          <option>状态1</option>
+          <option>状态1</option>
+          <option>状态1</option>
+        </select>
+      </div>
+      
+    </div>
+
+    <div class="s-submit">
+      <button type="button">查询</button>
+      <button type="button" onclick="window.location.href='ownerPayAdd.html'">新增</button>
+    </div>
+    
+  </div>
+
+  <!-- 筛选 -->
+  <div class="screen_type">
+    <ul>
+      <li class="current">在用</li>
+      <li>未启用</li>
+    </ul>
+  </div>
+
+  <section>
+    <div class="s-main">
+      <ul>
+        <li>名称：<span>深圳宝安区普通仓库</span></li>
+        <li>创建时间：<span>2017-09-29 08:35:31</span></li>
+      </ul>
+    </div>
+    <ul class="s-footer">
+      <li>停用</li>
+      <li>查看</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="s-main">
+      <ul>
+        <li>名称：<span>深圳宝安区普通仓库</span></li>
+        <li>创建时间：<span>2017-09-29 08:35:31</span></li>
+      </ul>
+    </div>
+    <ul class="s-footer">
+      <li>删除</li>
+      <li>查看</li>
+      <li>编辑</li>
+    </ul>
+  </section>
+  <section>
+    <div class="s-main">
+      <ul>
+        <li>名称：<span>深圳宝安区普通仓库</span></li>
+        <li>创建时间：<span>2017-09-29 08:35:31</span></li>
+      </ul>
+    </div>
+    <ul class="s-footer">
+      <li>删除</li>
+      <li>查看</li>
+      <li>编辑</li>
+    </ul>
+  </section>
+
+  
+
+  <div class="wh-next-page">
+    <p class="msg-up">
+      <i class="iconfont icon-up-arrow">&#xe605;</i>上拉查看下一页
+    </p>
+    <p class="mes-load" style="display:none;">
+      <i class="iconfont icon-up-load">&#xe62d;</i>正在加载数据
+    </p>
+    <p class="page-bt">查看第<span class="num">2</span>页（共<span class="num2">10</span>页）</p>
+  </div>
+
+</div>
+
+
+<!-- JS -->
+<script src="./assets/lib/fonts/iconfont.js"></script>
+<script src="./assets/lib/jquery/jquery.min.js"></script>
+<script src="./assets/lib/amazeui/amazeui.min.js"></script>
+<script src="./js/kd/common.kd.js"></script>
+<script src="./js/kd/mobiscroll.javascript.kd.min.js"></script>
+
+<script type="text/javascript">
+  
+  $(document).ready(function(){
+
+      /*mobiscroll插件*/
+      $(function(){
+        mobiscroll.settings = {
+            theme: 'ios',
+            display: 'bottom',
+            lang: 'zh'
+        };
+     
+      // 校区
+      mobiscroll.select('#school',{
+          group: true,
+      });
+
+      })
+
+      /*点击tab切换样式*/
+      $(document).on('click','.screen_type ul li',function(){
+        $(this).addClass('current').siblings('li').removeClass('current');
+      })
+
+  })
+
+
+  
+</script>
+
+
+
+
+</body>
+</html>
+
