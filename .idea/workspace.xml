@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2ae7eb9-aa47-4aa0-814b-941d9011ee9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/warehousePublish.html" beforeDir="false" afterPath="$PROJECT_DIR$/warehousePublish.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -87,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/warehousePublish.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="528">
+              <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -180,7 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="565" />
     <option name="y" value="33" />
     <option name="width" value="1278" />
@@ -279,12 +278,12 @@
       <workItem from="1557711833252" duration="7344000" />
       <workItem from="1557797005132" duration="22920000" />
       <workItem from="1557883406416" duration="22565000" />
-      <workItem from="1557970188428" duration="20399000" />
+      <workItem from="1557970188428" duration="21448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91230000" />
+    <option name="totallyTimeSpent" value="92279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -492,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/warehousePublish.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="528">
+          <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
         </state>
       </provider>
     </entry>
